@@ -13,7 +13,7 @@ class BlController extends Controller
      */
     public function index()
     {
-        //
+        return view('bl.index');
     }
 
     /**

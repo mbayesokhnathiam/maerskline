@@ -30,6 +30,6 @@ Route::group(['prefix' => 'vessels', 'middleware' => 'auth'], function () {
 });
 
 Route::group(['prefix' => 'bls', 'middleware' => 'auth'], function () {
-    Route::get('/bls', 'BlController@index')->name('bls');
+    Route::get('/', 'BlController@index')->name('bls');
 
 });

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Shipping;
 use Illuminate\Http\Request;
 
 class ShippingController extends Controller
@@ -13,17 +14,9 @@ class ShippingController extends Controller
      */
     public function index()
     {
-        return view('shipping.index');
-    }
+        $shipping_lines = Shipping::paginate(10);
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return view('shipping.index', ['shipping_lines' => $shipping_lines]);
     }
 
     /**
