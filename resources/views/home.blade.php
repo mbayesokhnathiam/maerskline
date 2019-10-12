@@ -60,19 +60,19 @@
 
                     <div class="form-group">
                         <label for="startDate">Date de debut <span class="text-danger">*</span></label>
-                        <input type="date" class="form-control rounded-0" id="startDate" name="startDate" required>
+                        <input type="date" class="form-control rounded-0" id="startDate" name="rechercheManifesteForm.datManifDateDebut" required>
                     </div>
 
                     <div class="form-group">
                         <label for="endDate">Date de fin <span class="text-danger">*</span></label>
-                        <input type="date" class="form-control rounded-0" id="endDate"name="endDate" required>
+                        <input type="date" class="form-control rounded-0" id="endDate" name="rechercheManifesteForm.datManifDateFin" required>
                     </div>
 
                     <div class="form-group">
                         <label for="annee">Numero Manifeste <span class="text-danger">*</span></label>
                         <div class="d-flex justify-content-start">
-                            <input type="text" class="form-control rounded-0 w-50 mr-2" id="year" name="year" placeholder="Annee" required>
-                            <input type="text" class="form-control rounded-0 w-50" id="office" name="office" placeholder="Bureau" required>
+                            <input type="text" class="form-control rounded-0 w-50 mr-2" id="year" name="rechercheManifesteForm.numManifAnnee" placeholder="Annee" required>
+                            <input type="text" class="form-control rounded-0 w-50" id="office" name="rechercheManifesteForm.numManifCodeBur" placeholder="Bureau" required>
                         </div>
                     </div>
 
