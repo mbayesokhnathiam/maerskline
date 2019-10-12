@@ -18,3 +18,18 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'shipping', 'middleware' => 'auth'], function () {
+    Route::get('/', 'ShippingController@index')->name('shipping-lines');
+
+});
+
+Route::group(['prefix' => 'vessels', 'middleware' => 'auth'], function () {
+    Route::get('/', 'VesselController@index')->name('vessels');
+
+});
+
+Route::group(['prefix' => 'bls', 'middleware' => 'auth'], function () {
+    Route::get('/bls', 'BlController@index')->name('bls');
+
+});

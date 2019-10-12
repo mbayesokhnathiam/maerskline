@@ -1,0 +1,4 @@
+name: maerskline
+recipe: laravel
+config:
+  webroot: public

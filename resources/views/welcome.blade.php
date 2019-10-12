@@ -80,7 +80,9 @@
             @endif
 
             <div class="content">
-                <img class="img-fluid" src="{{ asset('img/mearskline.png') }}">
+                <a href="{{ url('/home') }}">
+                    <img class="img-fluid" src="{{ asset('img/mearskline.png') }}">
+                </a>
             </div>
         </div>
     </body>
