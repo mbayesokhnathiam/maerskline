@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="container pb-2 mb-2">
+        <a class="bg-maersk-primary btn btn-sm h3 py-2 text-white">Ajouter une shipping line</a>
+    </div>
+
     <table class="container table w-100">
         <thead>
             <tr>
