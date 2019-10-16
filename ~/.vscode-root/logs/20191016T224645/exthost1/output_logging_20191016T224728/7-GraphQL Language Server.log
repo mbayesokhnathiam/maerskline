@@ -1,0 +1,11 @@
+Watchman:  Watchman was not found in PATH.  See https://facebook.github.io/watchman/docs/install.html for installation instructions
+(node:5698) UnhandledPromiseRejectionWarning: TypeError: Reduce of empty array with no initial value
+    at Array.reduce (<anonymous>)
+    at _callee10$ (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/graphql-language-service-server/dist/MessageProcessor.js:778:59)
+    at tryCatch (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/regenerator-runtime/runtime.js:65:40)
+    at Generator.invoke [as _invoke] (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/regenerator-runtime/runtime.js:303:22)
+    at Generator.prototype.(anonymous function) [as next] (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/regenerator-runtime/runtime.js:117:21)
+    at asyncGeneratorStep (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/graphql-language-service-server/dist/MessageProcessor.js:45:103)
+    at _next (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/graphql-language-service-server/dist/MessageProcessor.js:47:194)
+(node:5698) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:5698) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.

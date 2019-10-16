@@ -270,3 +270,4 @@ Watchman:  Watchman was not found in PATH.  See https://facebook.github.io/watch
     at asyncGeneratorStep (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/graphql-language-service-server/dist/MessageProcessor.js:45:103)
     at _next (/home/ghost/.vscode/extensions/prisma.vscode-graphql-0.2.2/node_modules/graphql-language-service-server/dist/MessageProcessor.js:47:194)
 (node:25998) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+[Info  - 18:27:51] The graphql server has stopped running

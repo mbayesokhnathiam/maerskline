@@ -20,7 +20,7 @@ document.getElementById("import-modal").addEventListener('click', (event) => {
 })
 
 let urls = {
-    searchUrl: 'https://gaindeintegral.douanes.sn/gainde/manifesteGrid.action?_search=false&nd=PARAM&rows=PARAM&page=PARAM&sidx=&sord=asc&_=PARAM',
+    searchUrl: 'https://gaindeintegral.douanes.sn/gainde/manifesteGrid.action?_search=false&nd=PARAM&rows=PARAM&page=PARAMsidx=&sord=asc&_=PARAM',
     detailUrl: 'https://gaindeintegral.douanes.sn/gainde/listEnregArtEmbarquementGridAction.action?_search=false&nd=PARAM&rows=PARAM&page=PARAM&sidx=&sord=PARAM&_=PARAM',
     vesselUrl: 'https://gaindeintegral.douanes.sn/gainde/listArtEnregGridAction.action?_search=false&nd=PARAM&rows=PARAM&page=PARAM&sidx=&sord=PARAM&_=PARAM'
 }
