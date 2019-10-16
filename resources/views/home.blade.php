@@ -13,7 +13,7 @@
 
                 <i class="fas fa-shipping-fast fa-5x pt-3 text-black-50"></i>
 
-                <span class="font-weight-lighter h4 my-3">1000</span>
+                <span class="font-weight-lighter h4 my-3">{{ $ships }}</span>
 
                 <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="/shipping">Voir plus</a>
             </div>
@@ -25,7 +25,7 @@
 
                 <i class="fas fa-ship  fa-5x pt-3 text-black-50"></i>
 
-                <span class="font-weight-lighter h4 my-3">1000</span>
+                <span class="font-weight-lighter h4 my-3">{{ $vessels }}</span>
 
                 <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="/vessels">Voir plus</a>
             </div>
@@ -37,7 +37,7 @@
 
                 <i class="fas fa-file-invoice  fa-5x pt-3 text-black-50"></i>
 
-                <span class="font-weight-lighter h4 my-3">1000</span>
+                <span class="font-weight-lighter h4 my-3">{{ $bls }}</span>
 
                 <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="/bls">Voir plus</a>
             </div>

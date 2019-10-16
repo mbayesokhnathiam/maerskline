@@ -10,6 +10,7 @@
     <title>{{ __('Maersk Line est une société danoise de transport international de conteneurs et la plus grande filiale opérationnelle du groupe Maersk, un conglomérat danois.') }}</title>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/data-structures.js') }}" defer></script>
     <!-- <script src="{{ asset('js/validator.js') }}" defer></script> -->

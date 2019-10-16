@@ -47,6 +47,7 @@ function handleDatasFromUrl(url, request) {
     }
 }
 
+<<<<<<< HEAD
 function sendRequest(endpoint, datas) {
     fetch(endpoint, {
         method: 'POST',
@@ -58,3 +59,6 @@ function sendRequest(endpoint, datas) {
         }
     })
 }
+=======
+module.exports = {extractDatas, requestHandler}
+>>>>>>> 375c4182e889c5c300766fe5f34980dee68136ae

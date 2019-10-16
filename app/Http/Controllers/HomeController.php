@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Bl;
+use App\Shipping;
+use App\Vesselle;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $total_ships = Shipping::count();
+        $total_vessels = Vesselle::count();
+        $total_bls = Bl::count();
+
+        return view('home', [
+                            'ships' => $total_ships,
+                            'vessels' => $total_vessels,
+                            'bls' => $total_bls
+        ]);
     }
 }
