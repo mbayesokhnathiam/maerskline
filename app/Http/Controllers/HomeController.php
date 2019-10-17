@@ -26,14 +26,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $total_ships = Shipping::count();
-        $total_vessels = Vesselle::count();
-        $total_bls = Bl::count();
+        $totalShips = Shipping::count();
+        $totalVessels = Vesselle::count();
+        $totalBls = Bl::count();
 
         return view('home', [
-                            'ships' => $total_ships,
-                            'vessels' => $total_vessels,
-                            'bls' => $total_bls
+            'ships' => $totalShips,
+            'vessels' => $totalVessels,
+            'bls' => $totalBls
         ]);
     }
 }
