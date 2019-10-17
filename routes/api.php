@@ -17,10 +17,6 @@ $api = app('Dingo\Api\Routing\Router');
 //     return $request->user();
 // });
 
-<<<<<<< HEAD
 $api->version('v1', function ($api) {
     $api->post('/vessels', 'App\Http\Controllers\ApiController@store');
 });
-=======
-Route::get('/vessels', 'Api\ApiController@vessels');
->>>>>>> parent of 537f513... Updated EndPoint Behavior
