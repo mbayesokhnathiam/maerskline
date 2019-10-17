@@ -24,6 +24,7 @@ class ApiController extends BaseController
      */
     public function store(Request $request)
     {
+
         return $this->response->array($request);
     }
 
