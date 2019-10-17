@@ -26,10 +26,14 @@ class ApiController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         // dd($request);
         // return response()->json(['data' => $request]);
         return response()->json(['data' => Shipping::all()]);
 
+=======
+        dd($request);
+>>>>>>> parent of 537f513... Updated EndPoint Behavior
     }
 
     /**
