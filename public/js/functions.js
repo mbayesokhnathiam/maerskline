@@ -1,5 +1,5 @@
-if (document.getElementById("next-button")) {
-    document.getElementById("next-button").click()
+if (document.getElementById("next_gridable_pager")) {
+    document.getElementById("next_gridable_pager").click()
 }
 
 
@@ -73,3 +73,10 @@ function serializeObject(object) {
         open.call(this, method, url, async, user, pass);
     };
 })(XMLHttpRequest.prototype.open);
+
+function includeFileSaver() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js';
+    document.head.appendChild(script);
+}
