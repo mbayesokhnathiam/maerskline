@@ -1,11 +1,7 @@
 <?php
-
-namespace App\Http\Controllers\Api;
-
-use App\Http\Controllers\Controller;
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
-class ApiController extends Controller
+class ApiController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +12,6 @@ class ApiController extends Controller
     {
         //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -25,9 +20,8 @@ class ApiController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        return $this->response->array($request);
     }
-
     /**
      * Display the specified resource.
      *
@@ -38,7 +32,6 @@ class ApiController extends Controller
     {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -50,7 +43,6 @@ class ApiController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
