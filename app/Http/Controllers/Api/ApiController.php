@@ -25,7 +25,10 @@ class ApiController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        // dd($request);
+        // return 'Bonjour Samba aka ZcoderBoy';
+        return response()->json(['salutation' => 'Bonjour Samba aka ZcoderBoy', 'data' => $request]);
+
     }
 
     /**
