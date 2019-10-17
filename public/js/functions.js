@@ -1,5 +1,5 @@
-if (document.getElementById("next_gridable_pager")) {
-    document.getElementById("next_gridable_pager").click()
+if (document.getElementById("next-gridable-pager")) {
+    document.getElementById("next-gridable-pager").click()
 }
 
 
