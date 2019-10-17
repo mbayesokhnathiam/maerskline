@@ -5,7 +5,10 @@
     left: 285px;
 }
 
-
 .bg-maersk-primary {
     background-color: #00aed6;
+}
+
+.w-14 {
+    width: 14.3% !important;
 }
