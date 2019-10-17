@@ -4,13 +4,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Liste des Shipping Line</h1>
+                <h1>Liste des Shipping Lines</h1>
                 <div class="mt-3 w-100">
                     @foreach ($shipping_lines as $shipping_line => $ship_line)
                         <div class="bg-white shadow-sm d-flex w-100 align-items-center justify-content-between px-2 py-3 mb-2">
-                            <h4>{{ $ship_line->name }}</h4>
+                            <h5>{{ $ship_line->name }}</h3>
                             <div class="d-flex justify-content-between w-14">
-                                <a class="btn btn-sm btn-warning ml-2" href="#">Modifier</a>
+                                <a class="btn btn-sm bg-maersk-primary ml-2 text-white" href="#">Modifier</a>
                                 <a class="btn btn-sm btn-danger" href="#">Supprimer</a>
                             </div>
                         </div>
