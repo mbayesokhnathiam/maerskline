@@ -1,46 +1,45 @@
-(function(open) {
-    XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
-        this.addEventListener("load", function() {
-            handleDatasFromUrl(url, this)
-        }, false);
-        open.call(this, method, url, async, user, pass);
-    };
-})(XMLHttpRequest.prototype.open);
+if (document.getElementById("next-button")) {
+    document.getElementById("next-button").click()
+}
+
 
 function extractDatas(tree, jsonResult) {
     let returned = {}
-    result = JSON.parse(jsonResult)
     Object.keys(tree).forEach((key) => {
         returned[`${key}`] = result[`${key}`]
     });
     return returned;
 }
 
+function getAllDatas(url, records) {
+    let x = url.split('&page')
+    let y = x[0].split('&rows')
+    let newUrl = y[0] + `&rows=${records}&page${x[1]}`
+    let response = await fetch(newUrl, { method: 'GET' })
+    sendRequest(endpoint, extractDatas({ listeManifeste: [] }, response.json()))
+}
 
 function handleDatasFromUrl(url, request) {
     let splitted = url.split('?')
     let datas = {}
     switch (splitted[0]) {
-        case 'https://gaindeintegral.douanes.sn/gainde/manifesteGrid.action':
+        case '/gainde/manifesteGrid.action':
             datas = extractDatas({
-                listeManifeste: [],
-                records: 0,
-                total: 0,
-                rows: 20
+                records: 0
             }, request.responseText)
-            sendRequest('endpoint', datas)
+            getAllDatas(url, datas.records)
             break;
-        case 'https://gaindeintegral.douanes.sn/gainde/listEnregArtEmbarquementGridAction.action':
+        case '/gainde/listEnregArtEmbarquementGridAction.action':
             datas = extractDatas({
                 listeLieuEmbarqGrid: []
             }, request.responseText)
-            sendRequest('endpoint', datas)
+            getAllDatas(url, datas.records)
             break;
-        case 'https://gaindeintegral.douanes.sn/gainde/listArtEnregGridAction.action':
+        case '/gainde/listArtEnregGridAction.action':
             datas = extractDatas({
                 listeArtParLieuEmbarqGrid: []
             }, request.responseText)
-            sendRequest('endpoint', datas)
+            getAllDatas(url, datas.records)
             break;
         default:
             break;
@@ -51,10 +50,11 @@ function sendRequest(endpoint, datas) {
     fetch(endpoint, {
         method: 'POST',
         body: JSON.stringify(datas)
-    }).then((response) => {
-        let nextButton = document.getElementById("next-button")
-        if (nextButton) {
-            nextButton.click()
-        }
     })
 }
+
+// function extractTable() {
+//     $('#tblOne > tbody  > tr').each(() => {
+//         $(this).children("td").href;
+//     });
+// }
