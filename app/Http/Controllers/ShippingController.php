@@ -14,7 +14,7 @@ class ShippingController extends Controller
      */
     public function index()
     {
-        $shipping_lines = Shipping::paginate(10);
+        $shipping_lines = Shipping::paginate(6);
 
         return view('shipping.index', ['shipping_lines' => $shipping_lines]);
     }
