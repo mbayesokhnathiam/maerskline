@@ -18,5 +18,5 @@ $api = app('Dingo\Api\Routing\Router');
 // });
 
 $api->version('v1', function ($api) {
-    $api->post('/vessels', 'Api\ApiController@vessels');
+    $api->post('/vessels', 'App\Http\Controllers\ApiController@store');
 });
