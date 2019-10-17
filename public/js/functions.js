@@ -55,6 +55,16 @@ function sendRequest(endpoint, datas) {
     })
 }
 
+function serializeObject(object) {
+    let output = "";
+    let value;
+    Object.keys(object).forEach((key, index) => {
+        value = object[`${key}`]
+        index == 0 ? output += `${key}=${value}` : output += `&${key}=${value}`;
+    });
+    return output;
+}
+
 (function(open) {
     XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
         this.addEventListener("load", function() {
