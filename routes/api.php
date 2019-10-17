@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
-
+// use Illuminate\Http\Request;
+$api = app('Dingo\Api\Routing\Router');
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,8 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
-Route::post('/vessels', 'Api\ApiController@store');
+$api->version('v1', function ($api) {
+    $api->post('/vessels', 'Api\ApiController@store');
+});
