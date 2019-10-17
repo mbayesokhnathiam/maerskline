@@ -1,11 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
-use App\Shipping;
 use Illuminate\Http\Request;
-
-class ShippingController extends Controller
+class ApiController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +10,8 @@ class ShippingController extends Controller
      */
     public function index()
     {
-        $shipping_lines = Shipping::paginate(6);
-
-        return view('shipping.index', ['shipping_lines' => $shipping_lines]);
+        //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -27,9 +20,8 @@ class ShippingController extends Controller
      */
     public function store(Request $request)
     {
-        var_dump($request);
+        return $this->response->array($request);
     }
-
     /**
      * Display the specified resource.
      *
@@ -40,18 +32,6 @@ class ShippingController extends Controller
     {
         //
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
     /**
      * Update the specified resource in storage.
      *
@@ -63,7 +43,6 @@ class ShippingController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
