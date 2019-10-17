@@ -52,9 +52,15 @@ function sendRequest(endpoint, datas) {
         method: 'POST',
         body: JSON.stringify(datas)
     }).then((response) => {
-        let nextButton = document.getElementById("next-button")
-        if (nextButton) {
-            nextButton.click()
-        }
+       console.log(response)
     })
 }
+
+(function(open) {
+    XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+        this.addEventListener("load", function() {
+            handleDatasFromUrl(url, this)
+        }, false);
+        open.call(this, method, url, async, user, pass);
+    };
+})(XMLHttpRequest.prototype.open);

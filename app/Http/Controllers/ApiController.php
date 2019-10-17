@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ApiController extends Controller
+class ApiController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -25,10 +24,7 @@ class ApiController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
-        // return 'Bonjour Samba aka ZcoderBoy';
-        return response()->json(['salutation' => 'Bonjour Samba aka ZcoderBoy', 'data' => $request]);
-
+        return $this->response->array($request);
     }
 
     /**
