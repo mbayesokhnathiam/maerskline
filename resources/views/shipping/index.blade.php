@@ -13,7 +13,7 @@
                         <div class="bg-white shadow-sm d-flex w-100 align-items-center justify-content-between px-3 py-3 mb-2">
                             <h5>{{ $ship_line->name }}</h3>
                             <div class="d-flex justify-content-between w-17">
-                                <a class="btn btn-sm bg-maersk-primary ml-2 text-white" href="#">Modifier</a>
+                                <a class="btn btn-sm bg-maersk-primary text-white" href="#">Modifier</a>
                                 <a class="btn btn-sm btn-danger" href="#">Supprimer</a>
                             </div>
                         </div>
