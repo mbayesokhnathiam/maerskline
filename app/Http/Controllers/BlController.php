@@ -14,25 +14,6 @@ class BlController extends Controller
      */
     public function index()
     {
-        // $file = Storage::disk('local')->put('file.txt', '[listeManifeste:{bl: 1},{bl: 2},{bl: 3}]');
-        // File::get(storage_path("file.txt"));
-
-        // while(!feof($file)) {
-        //     echo fgets($file). "<br>";
-        // }
-
-        // fclose($file);
-
-        $json = Storage::get('manifest.txt');
-
-        $json = json_encode($json);
-
-        $test = json_decode($json);
-
-
-
-        dd(json_encode($test));
-
         return view('bl.index');
     }
 
