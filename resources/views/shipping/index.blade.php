@@ -6,7 +6,7 @@
             <div class="col-10">
                 <div class="w-100 d-flex align-items-center justify-content-between">
                     <h1>Shipping Lines</h1>
-                    <a class="btn btn-sm btn-success shadow-sm rounded-0" href="#">Ajouter un shipping</a>
+                    <a class="btn btn-sm btn-success shadow-sm rounded-0" href="#">Ajouter une shipping line</a>
                 </div>
                 <div class="mt-3 w-100">
                     @foreach ($shipping_lines as $shipping_line => $ship_line)

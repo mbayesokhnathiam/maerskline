@@ -33,3 +33,6 @@ Route::group(['prefix' => 'bls', 'middleware' => 'auth'], function () {
     Route::get('/', 'BlController@index')->name('bls');
 
 });
+
+Route::get('/gainde', 'DataController@index');
+Route::post('/gainde', 'DataController@import');
