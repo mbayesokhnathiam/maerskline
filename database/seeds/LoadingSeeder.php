@@ -13,2322 +13,5048 @@ class LoadingSeeder extends Seeder
     public function run()
     {
         $loadings = [
-            'port' => 'AALESUND\r\n',
-            'place' => 'NORWAY\r\n', 'Scandinavia Cluster\r\n',
-            'route' => 'W3\r\n',
-
-            'port' => 'AARHUS',
-            'place' => 'DENMARK', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'ABERDEEN',
-            'place' => 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ABIDJAN',
-            'place' => 'IVORY COAST', 'Ivory Coast Cluster',
-            'route' => 'W5',
-
-            'port' => 'ABU DHABI',
-            'place' => 'U. A. E.', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'ACAJUTLA',
-            'place' => 'EL SALVADOR', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'ADDIS ABEBA',
-            'place' => 'ETHIOPIA', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'ADELAIDE',
-            'place' => 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ADEN',
-            'place' => 'YEMEN', 'Saudi Arabia Cluster',
-            'route' => 'W2',
-
-            'port' => 'AGADIR',
-            'place' => 'MOROCCO', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'AGALEGA',
-            'place' => 'MAURITIUS', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'AGRIGENTO',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'AHMEDABAD',
-            'place' => 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'AHMEDNAGAR',
-            'place' => 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'AKITA',
-            'place' => 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'AL AQABAH',
-            'place' => 'JORDAN', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'AL KHUMS',
-            'place' => 'LIBYA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALEXANDRIA',
-            'place' => 'EGYPT', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALGECIRAS',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALGIERS',
-            'place' => 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALIAGA',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALICANTE',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALMERIA',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ALTAMIRA',
-            'place' => 'MEXICO', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'AMBARLI',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'AMBARLI',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'AMBRIZ',
-            'place' => 'ANGOLA', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'AMSTERDAM',
-            'place' => 'NETHERLANDS', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ANCONA',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'ANNABA',
-            'place' => 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ANTALYA',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ANTALYA',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ANTANANARIVO',
-            'place' => 'MADAGASCAR', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'ANTSIRANANA',
-            'place' => 'MADAGASCAR', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'ANTWERP',
-            'place' => 'BELGIUM', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'APAPA',
-            'place' => 'NIGERIA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'AQABA',
-            'place' => 'JORDAN', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'ARICA',
-            'place' => 'CHILE', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'ARRECIFE',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ASALUYEH',
-            'place' => 'IRAN', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'ASHDOD',
-            'place' => 'ISRAEL', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ASSAB',
-            'place' => 'ERITREA', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'ASTAKOS',
-            'place' => 'GREECE', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'ASUNCION',
-            'place' => 'PARAGUAY', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'ATAR',
-            'place' => 'MAURITANIA', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'ATLANTA',
-            'place' => 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'AUCKLAND',
-            'place' => 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'AUGUSTA',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'AUGUSTA',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'AUSTEVOLL',
-            'place' => 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'AVALDSNES',
-            'place' => 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'AVCILAR',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BAHIA BLANCA',
-            'place' => 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'BAHRAIN',
-            'place' => 'BAHRAIN', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'BALBOA',
-            'place' => 'PANAMA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'BALTIMORE',
-            'place' => 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'BALYKCHY',
-            'place' => 'KIRGHIZISTAN', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BAMAKO',
-            'place' => 'MALI', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'BANANA',
-            'place' => 'CONGO, DEM. REP. OF', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'BANDAR ABBAS',
-            'place' => 'IRAN', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'BANDAR KHOMEINI',
-            'place' => 'IRAN', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'BANDIRMA',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BANGALORE',
-            'place' => 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'BANGKOK',
-            'place' => 'THAILAND', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BANJUL',
-            'place' => 'GAMBIA', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'BARCELONA',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BARI',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'BARRANQUILLA',
-            'place' => 'COLOMBIA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'BASSE TERRE',
-            'place' => 'GUADELOUPE', 'Carribean Sea Cluster',
-            'route' => 'X6',
-
-            'port' => 'BASSENS',
-            'place' => 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'BATA',
-            'place' => 'EQUATORIAL GUINEA', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'BEIHAI',
-            'place' => 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BEIJIAO',
-            'place' => 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BEIRA',
-            'place' => 'MOZAMBIQUE', 'Mozambique Cluster',
-            'route' => 'W5',
-
-            'port' => 'BEIRUT',
-            'place' => 'LEBANON', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BEJAIA (BOUGIE)',
-            'place' => 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BELAWAN',
-            'place' => 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BELFAST',
-            'place' => 'IRELAND', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BELLBAY',
-            'place' => 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BENGHAZI',
-            'place' => 'LIBYA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BERBERA',
-            'place' => 'SOMALIA', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'BERGEN',
-            'place' => 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'BILBAO',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BISSAU',
-            'place' => 'GUINEA-BISSAU', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'BIZERTA',
-            'place' => 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BLUFF',
-            'place' => 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BOMA',
-            'place' => 'CONGO, DEM. REP. OF', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'BOMBAY',
-            'place' => 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'BOSPERUS',
-            'place' => 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BOSTON',
-            'place' => 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'BREMERHAVEN',
-            'place' => 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BREST',
-            'place' => 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'BREVIK',
-            'place' => 'NORWAY', 'Scandinavia cluster',
-            'route' => 'W3',
-
-            'port' => 'BRIDGETOWN',
-            'place' => 'BARBADOS', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'BRINDISI',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'BRISBANE',
-            'place' => 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BRISTOL',
-            'place' => 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BROOKLYN',
-            'place' => 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'BRUNSBUTTEL',
-            'place' => 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BUENAVENTURA',
-            'place' => 'COLOMBIA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'BUENOS AIRES',
-            'place' => 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'BUJUMBURA',
-            'place' => 'BURUNDI', 'Kenya Cluster',
-            'route' => 'W5',
-
-            'port' => 'BURGAS',
-            'place' => 'BULGARIA', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'BURNIE',
-            'place' => 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BUSAN',
-            'place' => 'KOREA, SOUTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CABEDELO',
-            'place' => 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'CABINDA',
-            'place' => 'ANGOLA', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'CADIZ',
-            'place' => 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CAEN',
-            'place' => 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'CAGAYAN DE ORO',
-            'place' => 'PHILIPPINES', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CAGLIARI',
-            'place' => 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'CAI LAN', 'VIETNAM', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CAIRO', 'EGYPT', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CALABAR', 'NIGERIA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'CALCUTTA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'CALETA PAULA', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'CALETERA', 'COSTA RICA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'CALLAO', 'PERU', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'CAMPANA', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'CAPE TOWN', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'CARTAGENA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CARTAGENA', 'COLOMBIA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'CARTAGENA (COLOMBIA)', 'COLOMBIA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'CARTAGENA (SPAIN)', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CASABLANCA', 'MOROCCO', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CASTELLON', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'castiglione delle stiviere', 'ITALY', 'ITALY CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CASTRIES', 'ST LUCIA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'CATANIA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'CAUCEDO', 'DOMINICAN REPUBLIC', 'CARIBBEAN SEA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'CEBU', 'PHILIPPINES', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CEUTA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CHANGSHA', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CHANGZHOU', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CHARLESTON', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'CHARLOTTE', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'CHATELDON', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CHENGDU', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CHENNAI', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'CHICAGO', 'UNITED STATES', 'NORTH AMERICA CLUSTER.',
-            'route' => 'W4',
-
-            'port' => 'CHITTAGONG', 'BANGLADESH', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'CHIWAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CHONGJIN', 'KOREA,NORTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CHONGQING', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CINCINNATI', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'CIVITAVECCHIA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'CLEVELAND', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'COCHIN', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'COCO SOLO', 'PANAMA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'COEGA', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'COLOMBO', 'SRI LANKA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'CONAKRY', 'GUINEA', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'CONSTANTZA', 'ROMANIA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'COPENHAGEN', 'DENMARK', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'CORK', 'IRELAND', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CORONEL', 'CHILE', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'COTONOU', 'BENIN', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'COVENTRY', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'CRISTOBAL', 'PANAMA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'DAKAR', 'SENEGAL', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'DALIAN', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'DAMIETTA', 'EGYPT', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DAMMAM', 'SAUDI ARABIA', 'Saudi Arabia Cluster',
-            'route' => 'W2',
-
-            'port' => 'DAR ES SALAAM', 'TANZANIA', 'Kenya Cluster',
-            'route' => 'W5',
-
-            'port' => 'DAR ES SALAM', 'TANZANIA', 'Kenya Cluster',
-            'route' => 'W5',
-
-            'port' => 'DAVAO', 'PHILIPPINES', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'DEGRAD DES CANNES.', 'FRENCH GUIANA', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'DELFZIJL', 'NETHERLANDS', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DIEPPE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'DJIBOUTI', 'DJIBOUTI', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'DOHA', 'QATAR', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'DOUALA', 'CAMEROON', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'DOULLENS', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'DOVER', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DUBAI', 'U. A. E.', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'DUBLIN', 'IRELAND', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DUNKERQUE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'DUPPIGHEIM', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DURBAN', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'DURRES', 'ALBANIA', 'GREECE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DUTCH HARBOUR', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'EAST LONDON', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'EGERSUND', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'EL AAIUN', 'MOROCCO', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'EL DEKHEILA', 'EGYPT', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'EL TABLASO', 'VENEZUELA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'EMDEN', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ENSENADA', 'MEXICO', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'ESBJERG', 'DENMARK', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'EVYAP', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'FANGCHENG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'FELIXSTOWE', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'FERROL', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'FLOROE', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'FORCADOS', 'NIGERIA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'FORTALEZA', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'FORT-DE-FRANCE', 'MARTINIQUE', 'CARIBBEAN SEA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'FOS SUR MER', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'FOSHAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'FOS-SUR-MER', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'FREDERICIA', 'DENMARK', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'FREDERIKSTAD', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'FREEMANTLE', 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'FREEPORT', 'MALTA', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'FREEPORT', 'BAHAMAS', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'FREETOWN', 'SIERRA LEONE', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'FREMANTLE', 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'FUJAIRAH', 'U. A. E.', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'FUQING/XIAMEN', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'FUSA', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'FUZHOU', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'GABORONE', 'BOTSWANA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'GALLICO', 'ITALY', 'ITALY CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GAOMING', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'GAVLE', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GDANSK', 'POLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GDYNIA', 'POLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GEBZE', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GEMLIK', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GENERAL SANTOS', 'PHILIPPINES', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'GENOA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'GEORGETOWN', 'GUYANA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'GIBRALTAR', 'GIBRALTAR', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GIJON', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GIOIA TAURO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'GOTHENBURG', 'SWEDEN', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'GRANGE MOUTH', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GRANGEMOUTH', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GRAVESEND', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GREENOCK', 'UNITED KINGDOM CLUSTER', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GREENVILLE', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'GRIDLEY', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'GUAM', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'GUANGZHOU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'GUANTA', 'VENEZUELA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'GUATEMALA CITY', 'GUATEMALA', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'GUAYAQUIL', 'ECUADOR', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'HAAVIK', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'HAIFA', 'ISRAEL', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HAIKOU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HAIPHONG', 'VIETNAM', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HAKATA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HALDIA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'HALIFAX APT', 'CANADA', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'HAMBURG', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HAMBURG PARK', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HAMINA', 'FINLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HARARE', 'ZIMBABWE', 'Mozambique Cluster',
-            'route' => 'W5',
-
-            'port' => 'HAREID', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'HAUGESUND', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'HAVANA', 'CUBA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'HAYDARPASA', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HAZIRA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'HELSINGBORG', 'SWEDEN', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'HELSINKI', 'FINLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HERAKLION', 'GREECE', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'HIROSHIMA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HO CHI MINH CITY', 'VIETNAM', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HODEIDAH', 'YEMEN', 'Saudi Arabia Cluster',
-            'route' => 'W2',
-
-            'port' => 'HONG KONG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HONOLULU', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'HOUSTON', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'HUANGPU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HUANGSHI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'IKSAN', 'KOREA, SOUTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ILYICHEVSK', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'INCHON', 'KOREA, SOUTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'INDIANAPOLIS', 'UNITES STATES', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'IQUIQUE', 'CHILE', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'ISHIKARI SHINKO', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ISKENDERUN', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ISTANBUL', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ITAJAI', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'IZMIR', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'IZMIT KORFEZI', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'JACKSONVILLE', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'JAKARTA', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'JAWAHARLAL NEHRU', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'JEBEL ALI', 'U. A. E.', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'JEDAH', 'SAUDI ARABIA', 'Saudi Arabia Cluster',
-            'route' => 'W2',
-
-            'port' => 'JIANGMEN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'JIUJIANG', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'JOHANNESBURG', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'JUBAIL', 'SAUDI ARABIA', 'Saudi Arabia Cluster',
-            'route' => 'W2',
-
-            'port' => 'KALININGRAD', 'RUSSIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KANDLA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'KANSAS CITY', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'KAOHSIUNG', 'TAIWAN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'KARACHI', 'PAKISTAN', 'Pakistan Cluster',
-            'route' => 'W2',
-
-            'port' => 'KARLSRUHE', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KEELUNG', 'TAIWAN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'KHALIFA BIN SALMAN', 'BAHRAIN', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'KHARTOUM', 'DJIBOUTI', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'KHOR AL FAKKAN', 'U.A.E', 'UNITES ARAB EMIRATES CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'KLAIPEDA', 'LITHUANIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KOBE', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'KOLKATA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'KOPER', 'SLOVENIA', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'KOTKA', 'FINLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KRAICHTAL', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KRISTIANSAND', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'KUWAIT', 'KUWAIT', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'KWANGYANG', 'KOREA, SOUTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LA GOULETTE', 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LA PALLICE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'LA ROCHELLE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'LA SPEZIA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'LAEM CHABANG', 'THAILAND', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LAGOS', 'NIGERIA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'LANGAR', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LANSHI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LARVIK', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'LAS PALMAS (ESP.)', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LATAKIA', 'SYRIA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'LE HAVRE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'LE PIREE', 'GREECE', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'LE VERDON', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'LEAMINGTON SPA', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LEGHORN', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'LEIXOES', 'PORTUGAL', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LELIU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LIANYUNGANG', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LIBREVILLE', 'GABON', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'LIMASSOL', 'CYPRUS', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'LISBON', 'PORTUGAL', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LIVERPOOL', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LIVORNO', 'ITALY', 'ITALY CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LOME', 'TOGO', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'LONDON', 'UNITED KINGDOM CLUSTER', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LONG BEACH', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'LONGONI', 'COMORE  ISLAND', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'LOS ANGELES', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'ST LOUIS', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'LUANDA', 'ANGOLA', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'LUDHIANA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'LYTTELTON', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MADRID', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MALABO', 'EQUATORIAL GUINEA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'MALAGA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MALTA', 'ITALY', 'ITALY CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MANGALORE', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'MANILA', 'PHILIPPINES', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MANZANILLO (MEXICO)', 'MEXICO', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'MANZANILLO (PANAMA)', 'PANAMA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'MAPUTO', 'MOZAMBIQUE', 'Mozambique Cluster',
-            'route' => 'W5',
-
-            'port' => 'MARIEL', 'CUBA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'MARIENHEIDE', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MARIN PONTEVEDRA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MARMAGAO', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'MARPORT', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MARSAXLOKK', 'MALTA', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'MARSEILLE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'MATADI', 'CONGO, DEM. REP. OF', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'MELBOURNE', 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MEMPHIS', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'MERSIN', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MESAIEED', 'QATAR', 'UNITED ARAB EMIRATE CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'MIAMI', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'MINA QABOOS', 'OMAN', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'MINDELO', 'CAPE VERDE ISLAND', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'MOBILE', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'MOIN', 'COSTA RICA', 'CARIBBEAN SEA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'MOJI', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MOMBASA', 'KENYA', 'Kenya Cluster',
-            'route' => 'W5',
-
-            'port' => 'MONROVIA', 'LIBERIA', 'IVORY COAST CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'MONTEREAU-FAULT-YONNE', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MONTEVIDEO', 'URUGUAY', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'MONTOIR', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'MONTREAL', 'CANADA', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'MUMBAI', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'MUNDRA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'MUSCAT', 'OMAN', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'MUUGA', 'ESTONIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'NAGOYA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NANCHANG', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NANHAI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NANJING', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NANSHA', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NANTONG', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NAOETSU', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NAPIER', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NAPLES', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'NAVEGANTES', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'NELSON', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NEW DELHI', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'NEW ORLEANS', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'NEW PLYMOUTH', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'NEW YORK', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'NEWARK', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'NHAVA SHEVA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'NIIGATA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NINGBO', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'NORFOLK', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'NORRKOPING', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'NOUADHIBOU', 'MAURITANIA', 'NORTHERN WEST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'NOUAKCHOTT', 'MAURITANIA', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'NOVOROSSIYSK', 'RUSSIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'OAKLAND', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'OAKLAND', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'OCOA BAY', 'DOMINICAN REPUBLIC', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'ODENSE', 'DENMARK', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'ODESSA', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'OMAEZAKI', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ONNE', 'NIGERIA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => '(ALG) ORAN', 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'OSAKA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'OSLO', 'NORWAY', 'Scandinavia Cluster',
-            'route' => 'W3',
-
-            'port' => 'OULU', 'FINLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PADANG', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PALERMO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'PANJANG', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PARANAGUA', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'PASIR GUDANG', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PECEM', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'PENANG', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PENANG', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PERAWANG', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PHILADELPHIA', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'PHILIPSBURG', 'SAINT MARTIN', 'Carribean Sea Cluster',
-            'route' => 'X6',
-
-            'port' => 'PHNOM PENH', 'CAMBODIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PIPAVAV', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'PIRAEUS', 'GREECE', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'PLOCE', 'CROATIA', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'POINTE DES GALETS', 'REUNION', 'France Cluster',
-            'route' => 'W5',
-
-            'port' => 'POINTE NOIRE', 'CONGO', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'POINTE-A-PITRE', 'GUADELOUPE', 'Carribean Sea Cluster',
-            'route' => 'X6',
-
-            'port' => 'PORCHEVILLE', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PORSTHMOUTH', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PORT AU PRINCE', 'HAITI', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'PORT CHALMERS', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PORT ELIZABETH', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'PORT EVERGLADES', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'PORT GALLICE', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PORT GENTIL', 'GABON', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'PORT KELANG', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PORT LOUIS', 'MAURITIUS', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'PORT QASIM', 'PAKISTAN', 'Pakistan Cluster',
-            'route' => 'W2',
-
-            'port' => 'PORT REUNION', 'REUNION', 'France Cluster',
-            'route' => 'W5',
-
-            'port' => 'PORT SAID', 'EGYPT', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PORT SUDAN', 'SUDAN', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'PORTBURY', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PORTVENDRES', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'PORT-VENDRES', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'POTI', 'GEORGIA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'POZZALO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'PRAIA', 'CAPE VERDE ISLAND', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'PRETORIA', 'SOUTH AFRICA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'PUERTO BARRIOS', 'GUATEMALA', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'PUERTO DESEADO', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'PUERTO LIMON', 'COSTA RICA', 'CARIBBEAN SEA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'PUERTO SANTO TOMAS DE CASTILLA', 'GUATEMALA', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'PUTZBRUNN', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'QAPCO', 'QATAR', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'QINGDAO', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'QINHUANGDAO', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'QINZHOU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'RADES', 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'RAUMA', 'FINLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'RAVENNA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'RIGA', 'LATVIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'RIJEKA', 'CROATIA', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'RIO DE JANEIRO', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'RIO GRANDE', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'RIO HAINA', 'DOMINICAN REPUBLIC', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'RONGQI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ROSARIO', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'ROTTERDAM', 'NETHERLANDS', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ROUEN', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'SALALAH', 'OMAN', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'SALERNO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'SALVADOR', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SAMSUN', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SAN ANTONIO', 'CHILE', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'SAN FRANCISCO', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SAN PEDRO', 'IVORY COAST', 'Ivory Coast Cluster',
-            'route' => 'W5',
-
-            'port' => 'SANGCHENG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SANSHAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SANSHUI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SANTO DOMINGO', 'DOMINICAN REPUBLIC', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'SANTOS', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SAO FRANCISCO DO SUL', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SAVANNAH', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'SEATTLE', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'Select Origin', 'Country', 'Cluster',
-            'route' => 'Route',
-
-            'port' => 'SEMARANG', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SENTO SE', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SETE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'SETUBAL', 'PORTUGAL', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SEVILLE', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SFAX', 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SHAHID RAJAEE', 'IRAN', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'SHANGHAI', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SHANTOU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SHARJAH', 'U. A. E.', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'SHEKOU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SHIMIZU', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SHUAIBA', 'KUWAIT', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'SHUNDE', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SHUWAIKH', 'KUWAIT', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'SIHANOUKVILLE', 'CAMBODIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SINES', 'PORTUGAL', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SINGAPORE', 'SINGAPORE', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SKIKDA', 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SOHAR', 'OMAN', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'SONGKHLA', 'THAILAND', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SOUTHAMPTON', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ST.PETERSBURG', 'RUSSIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ST.PETERSBURG', 'RUSSIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'STARACHOWICE', 'POLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'STOCKHOLM', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'STOCKHOLM', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'STRATFORD-UPON-AVON', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SUAPE', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SURABAYA', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SWANSCOMBE', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SWANSEA', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'SYDNEY', 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SZCZECIN', 'POLAND', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TAICANG', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TAICHUNG', 'TAIWAN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TAIPEI', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TAIZHOU', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TAKORADI', 'GHANA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'TAKORADI', 'GHANA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'TALLINN', 'ESTONIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TAMATAVE', 'MADAGASCAR', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'TAMWORTH', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TANGA', 'TANZANIA', 'Kenya Cluster',
-            'route' => 'W5',
-
-            'port' => 'TANGER', 'MOROCCO', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TANJUNG PELEPAS', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TANJUNG PRIOK', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TARANTO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'TARRAGONA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TARTUS', 'SYRIA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'TAURANGA', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TEESPORT', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TEMA', 'GHANA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'TENERIFE', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'THAMESPORT', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'THESSALONIKI', 'GREECE', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'TIANJIN / XINGANG', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TILBURY', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TOAMASINA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TOKYO', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'TOMAKOMAI', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'TORONTO', 'CANADA', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'TOULON', 'FRANCE', 'FRANCE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TRABZON', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TRAPANI', 'ITALY', 'ITALY CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TRIESTE', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'TRIPOLI', 'LIBYA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TUNIS', 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TUTICORIN', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'VADO LIGURE', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'VALENCIA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VALPARAISO', 'CHILE', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'VANCOUVER', 'CANADA', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'VARNA', 'BULGARIA', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'VASTERAS', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VENEZIA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'VERA CRUZ', 'MEXICO', 'Middle America Cluster',
-            'route' => 'W4',
-
-            'port' => 'VIGO', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VILA DO CONDE', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'VILLA CORTESE', 'ITALY', 'ITALY CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VILLAGARCIA DE AROSA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VISAPHAPATNAM', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'VITORIA', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'VUNG TAU', 'VIETNAM', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'WALLHAMN', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'WALLHAMN', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'WALVIS BAY', 'NAMIBIA', 'South Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'WEIHAI', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'WELLINGTON (NZ)', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'WENZHOU', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'WUHAN', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'WUHU', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'XIAMEN', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'XIAOLAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YANGON', '', '',
-            'route' =>  '',
-
-            'port' => 'YANGSHAN', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YANGZHOU', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YANTAI', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YANTIAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YICHANG', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YILPORT', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'YOKKAICHI', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YOKOHAMA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZARATE', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'ZEEBRUGGE', 'BELGIUM', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'ZHANGJIAGANG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZHANJIANG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZHAOQING', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZHAPU', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZHENJIANG', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZHONGSHAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ZHUHAI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MAKASSAR', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'IMMINGHAM', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VALENCE', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'NEWTOWN', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'KUMPORT', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'LUZHOU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SAGUNTO', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'AHUS', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BERGAMO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'CORINTO', 'NICARAGUA', 'MIDDLE AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'POLA DE LENA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TEKIRDAG', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VLISSINGEN', 'NETHERLANDS', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DETROIT', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'MINNEAPOLIS', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'KAMPONG SAOM', 'CAMBODIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => '(ARG) ORAN', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'BELEM', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'LAS PALMAS (ARG.)', 'ARGENTINA', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'SANTANDER', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'Bandar Shahid Rajaee', 'IRAN', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'MISURATA', 'LIBYA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'VILLANUOVA SUL CLISI', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'GIUSSANO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'NASSAU', 'BAHAMAS', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'COLOMBO (BR.)', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'KRISHNAPATNAM', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'ST MARTIN', 'SAINT MARTIN', 'Carribean Sea Cluster',
-            'route' => 'X6',
-
-            'port' => 'PAVIA', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'CHANG ON', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PARAMARIBO', 'SURINAME', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'BAR', 'MONTENEGRO', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'YANGON', 'MYANMAR', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'GUSTAVIA', 'GUADELOUPE', 'Caribbean Sea Cluster',
-            'route' => 'X6',
-
-            'port' => 'TOYAMA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LOUISVILLE', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'WILLEMSTAD', 'CURACAO', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'BOURGANEUF', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'COLUMBUS', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'VISHAKHAPATNAM', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'San Juan', 'PERU', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'PASIR PANJANG', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ITAPOA', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'GALVESTON', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'PYEONGTAEK', 'KOREA, SOUTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ULSAN', 'KOREA, SOUTH', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HAMBANTOTA', 'SRI LANKA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'SANBU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CHENGHAI LAIWU', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SOUSSE', 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'WORCESTER', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'JIANGYIN', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'DENVER', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'YUNFU', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SANTA CRUZ DE LA PALMA', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MINA ABDULLAH', 'KUWAIT', 'SAUDI ARABIA CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'Lanzarote', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'Shatian', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => '(CANADA) ODESSA', 'CANADA', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'Puerto del Rosario-Fuerteventura', 'SPAIN', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'AIKAKITA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'KOCAELI', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'NOUMEA', 'NEW CALEDONIA', 'Caribbean Sea Cluster',
-            'route' => 'W4',
-
-            'port' => 'MALMO', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DONGGUAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SAN BENEDETTO', 'ITALY', 'Italy Cluster',
-            'route' => 'W3',
-
-            'port' => 'LAHORE', 'PAKISTAN', 'Pakistan Cluster',
-            'route' => 'W2',
-
-            'port' => 'SOCETU', 'ROMANIA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'Nashville', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'ASTARA', 'AZERBAIJAN', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'ACCRA', 'GHANA', 'Central West Africa Cluster',
-            'route' => 'W5',
-
-            'port' => 'ALAGOINHAS', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'CRANFORD', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'QINGXI', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'St Louis-de-Montferrand', 'FRANCE', 'France Cluster',
-            'route' => 'W3',
-
-            'port' => 'Moroni', 'COMORE ISLAND', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'ARKANSAS CITY', 'UNITED STATES', 'NORTH AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'AALBORG', 'DENMARK', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'NACALA', 'MOZAMBIQUE', 'Mozambique Cluster',
-            'route' => 'W5',
-
-            'port' => 'AITOS', 'BULGARIA', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'SALALAH', 'OMAN', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'SENDAI', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => '(BG)BATA', 'BULGARIA', 'Greece Cluster',
-            'route' => 'W3',
-
-            'port' => 'Umm Qasr', 'IRAQ', 'Iran Cluster',
-            'route' => 'W2',
-
-            'port' => 'BATUMI', 'GEORGIA', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'AL AIN', 'U.A.E.', 'United Arab Emirates Cluster',
-            'route' => 'W2',
-
-            'port' => 'VILLETA', 'PARAGUAY', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'YARIMCA', 'TURKEY', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'BISCHWEIER', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DURBACH', 'GERMANY', 'NORTH WEST CONTINENT CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'TOYAMASHINKO', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => '(UKRAINE) ODESSA', 'UKRAINE', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'HEFEI', 'PRE', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'WESTPORT/PORT KLANG', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MOGADISHU', 'SOMALIA', 'HOA AND EAST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'TIMARU', 'NEW ZEALAND', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ANQING', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'SAN VICENTE', 'CHILE', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'HUNG YEN', 'VIETNAM', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'AL QAHMAH', 'SAUDI ARABIA', 'Saudi Arabia Cluster',
-            'route' => 'W2',
-
-            'port' => 'HALMSTAD', 'SWEDEN', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'GAOLAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BENOA', 'INDONESIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'YIBIN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'GHAZAOUET', 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MOSS', 'NORWAY', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DAKAR', 'SENEGAL', 'NORTHEN WEST AFRICA CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'PAITA', 'PERU', 'West Coast South America Cluster',
-            'route' => 'W4',
-
-            'port' => 'ITAGUAI', 'BRAZIL', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'YUEYANG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'Terport (San Antonio)', 'PARAGUAY', 'EAST COAST SOUTH AMERICA CLUSTER',
-            'route' => 'X6',
-
-            'port' => 'HUADU', 'PRN', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'ORKANGER', 'NORWAY', 'SCANDINAVIA CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'MAJUNGA', 'MADAGASCAR', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'HAMADA', 'JAPAN', 'NORTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'XINAN', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'LIANJIANG', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'HALUL', 'QATAR', 'UNITED ARAB EMIRATE CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'BERDSK', 'RUSSIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'DJEN-DJEN', 'ALGERIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KAMSAR', 'GUINEA', 'Senegal Cluster',
-            'route' => 'W5',
-
-            'port' => 'BIZERTE', 'TUNISIA', 'WESTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KRIBI', 'CAMEROON', 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'DARWIN', 'AUSTRALIA', 'OCEANIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'BOR', 'RUSSIA', 'EASTERN EUROPE CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KAKINADA', 'INDIA', 'INDIA AND BANGLADESH CLUSTER',
-            'route' => 'W2',
-
-            'port' => 'ILLICHIVSK', 'UKRAINE', 'EASTERN MEDITERRANEAN CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'PUERTO CORTES', 'HONDURAS', 'MIDDLE AMERICA CLUSTER',
-            'route' => 'W4',
-
-            'port' => 'PORT VICTORIA', 'SEYCHELLES', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'RUGAO', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'CRANBROOK', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'Taicheng (Taishai)', 'PRS', 'GREATER CHINA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'MUTSAMUDU', 'COMORE ISLAND', 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-            'route' => 'W5',
-
-            'port' => 'PILAR', 'PHILIPPINES', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
-
-            'port' => 'PORTSMOUTH', 'UNITED KINGDOM', 'UNITED KINGDOM AND IRELAND CLUSTER',
-            'route' => 'W3',
-
-            'port' => 'KUCHING', 'MALAYSIA', 'SOUTH EAST ASIA CLUSTER',
-            'route' => 'W1',
+            [
+                'place' => 'AALESUND',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AARHUS',
+                'country' => 'DENMARK',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ABERDEEN',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ABIDJAN',
+                'country' => 'IVORY COAST',
+                'cluster' => 'Ivory Coast Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ABU DHABI',
+                'country' => 'U. A. E.',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'ACAJUTLA',
+                'country' => 'EL SALVADOR',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ADDIS ABEBA',
+                'country' => 'ETHIOPIA',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ADELAIDE',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ADEN',
+                'country' => 'YEMEN',
+                'cluster' => 'Saudi Arabia Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'AGADIR',
+                'country' => 'MOROCCO',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AGALEGA',
+                'country' => 'MAURITIUS',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'AGRIGENTO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AHMEDABAD',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'AHMEDNAGAR',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'AKITA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'AL AQABAH',
+                'country' => 'JORDAN',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'AL KHUMS',
+                'country' => 'LIBYA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALEXANDRIA',
+                'country' => 'EGYPT',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALGECIRAS',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALGIERS',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALIAGA',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALICANTE',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALMERIA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ALTAMIRA',
+                'country' => 'MEXICO',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'AMBARLI',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AMBRIZ',
+                'country' => 'ANGOLA',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'AMSTERDAM',
+                'country' => 'NETHERLANDS',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ANCONA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ANNABA',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ANTALYA',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ANTANANARIVO',
+                'country' => 'MADAGASCAR',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ANTSIRANANA',
+                'country' => 'MADAGASCAR',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ANTWERP',
+                'country' => 'BELGIUM',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'APAPA',
+                'country' => 'NIGERIA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'AQABA',
+                'country' => 'JORDAN',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'ARICA',
+                'country' => 'CHILE',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ARRECIFE',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ASALUYEH',
+                'country' => 'IRAN',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'ASHDOD',
+                'country' => 'ISRAEL',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ASSAB',
+                'country' => 'ERITREA',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ASTAKOS',
+                'country' => 'GREECE',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ASUNCION',
+                'country' => 'PARAGUAY',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'ATAR',
+                'country' => 'MAURITANIA',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ATLANTA',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'AUCKLAND',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'AUGUSTA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AUSTEVOLL',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AVALDSNES',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AVCILAR',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BAHIA BLANCA',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'BAHRAIN',
+                'country' => 'BAHRAIN',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BALBOA',
+                'country' => 'PANAMA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BALTIMORE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BALYKCHY',
+                'country' => 'KIRGHIZISTAN',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BAMAKO',
+                'country' => 'MALI',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BANANA',
+                'country' => 'CONGO, DEM. REP. OF',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BANDAR ABBAS',
+                'country' => 'IRAN',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BANDAR KHOMEINI',
+                'country' => 'IRAN',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BANDIRMA',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BANGALORE',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BANGKOK',
+                'country' => 'THAILAND',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BANJUL',
+                'country' => 'GAMBIA',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BARCELONA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BARI',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BARRANQUILLA',
+                'country' => 'COLOMBIA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BASSE TERRE',
+                'country' => 'GUADELOUPE',
+                'cluster' => 'Carribean Sea Cluster',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'BASSENS',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BATA',
+                'country' => 'EQUATORIAL GUINEA',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BEIHAI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BEIJIAO',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BEIRA',
+                'country' => 'MOZAMBIQUE',
+                'cluster' => 'Mozambique Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BEIRUT',
+                'country' => 'LEBANON',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BEJAIA (BOUGIE)',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BELAWAN',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BELFAST',
+                'country' => 'IRELAND',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BELLBAY',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BENGHAZI',
+                'country' => 'LIBYA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BERBERA',
+                'country' => 'SOMALIA',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BERGEN',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BILBAO',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BISSAU',
+                'country' => 'GUINEA-BISSAU',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BIZERTA',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BLUFF',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BOMA',
+                'country' => 'CONGO, DEM. REP. OF',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BOMBAY',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BOSPERUS',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BOSTON',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BREMERHAVEN',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BREST',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BREVIK',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BRIDGETOWN',
+                'country' => 'BARBADOS',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BRINDISI',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BRISBANE',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BRISTOL',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BROOKLYN',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BRUNSBUTTEL',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BUENAVENTURA',
+                'country' => 'COLOMBIA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BUENOS AIRES',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'BUJUMBURA',
+                'country' => 'BURUNDI',
+                'cluster' => 'Kenya Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BURGAS',
+                'country' => 'BULGARIA',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BURNIE',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BUSAN',
+                'country' => 'KOREA, SOUTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CABEDELO',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'CABINDA',
+                'country' => 'ANGOLA',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'CADIZ',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CAEN',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CAGAYAN DE ORO',
+                'country' => 'PHILIPPINES',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CAGLIARI',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CAI LAN',
+                'country' => 'VIETNAM',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CAIRO',
+                'country' => 'EGYPT',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CALABAR',
+                'country' => 'NIGERIA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'CALCUTTA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'CALETA PAULA',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'CALETERA',
+                'country' => 'COSTA RICA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CALLAO',
+                'country' => 'PERU',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CAMPANA',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'CAPE TOWN',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'CARTAGENA',
+                'country' => 'COLOMBIA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CARTAGENA (COLOMBIA)',
+                'country' => 'COLOMBIA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CARTAGENA (SPAIN)',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CASABLANCA',
+                'country' => 'MOROCCO',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CASTELLON',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'castiglione delle stiviere',
+                'country' => 'ITALY',
+                'cluster' => 'ITALY CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CASTRIES',
+                'country' => 'ST LUCIA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CATANIA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CAUCEDO',
+                'country' => 'DOMINICAN REPUBLIC',
+                'cluster' => 'CARIBBEAN SEA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CEBU',
+                'country' => 'PHILIPPINES',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CEUTA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CHANGSHA',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CHANGZHOU',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CHARLESTON',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CHARLOTTE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CHATELDON',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CHENGDU',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CHENNAI',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'CHICAGO',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER.',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CHITTAGONG',
+                'country' => 'BANGLADESH',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'CHIWAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CHONGJIN',
+                'country' => 'KOREA,NORTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CHONGQING',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CINCINNATI',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'CIVITAVECCHIA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CLEVELAND',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'COCHIN',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'COCO SOLO',
+                'country' => 'PANAMA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'COEGA',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'COLOMBO',
+                'country' => 'SRI LANKA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'CONAKRY',
+                'country' => 'GUINEA',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'CONSTANTZA',
+                'country' => 'ROMANIA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'COPENHAGEN',
+                'country' => 'DENMARK',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CORK',
+                'country' => 'IRELAND',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CORONEL',
+                'country' => 'CHILE',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'COTONOU',
+                'country' => 'BENIN',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'COVENTRY',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CRISTOBAL',
+                'country' => 'PANAMA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'DAKAR',
+                'country' => 'SENEGAL',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DALIAN',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'DAMIETTA',
+                'country' => 'EGYPT',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DAMMAM',
+                'country' => 'SAUDI ARABIA',
+                'cluster' => 'Saudi Arabia Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'DAR ES SALAAM',
+                'country' => 'TANZANIA',
+                'cluster' => 'Kenya Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DAR ES SALAM',
+                'country' => 'TANZANIA',
+                'cluster' => 'Kenya Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DAVAO',
+                'country' => 'PHILIPPINES',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'DEGRAD DES CANNES.',
+                'country' => 'FRENCH GUIANA',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DELFZIJL',
+                'country' => 'NETHERLANDS',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DIEPPE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DJIBOUTI',
+                'country' => 'DJIBOUTI',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DOHA',
+                'country' => 'QATAR',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'DOUALA',
+                'country' => 'CAMEROON',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DOULLENS',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DOVER',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DUBAI',
+                'country' => 'U. A. E.',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'DUBLIN',
+                'country' => 'IRELAND',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DUNKERQUE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DUPPIGHEIM',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DURBAN',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DURRES',
+                'country' => 'ALBANIA',
+                'cluster' => 'GREECE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DUTCH HARBOUR',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'EAST LONDON',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'EGERSUND',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'EL AAIUN',
+                'country' => 'MOROCCO',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'EL DEKHEILA',
+                'country' => 'EGYPT',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'EL TABLASO',
+                'country' => 'VENEZUELA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'EMDEN',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ENSENADA',
+                'country' => 'MEXICO',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ESBJERG',
+                'country' => 'DENMARK',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'EVYAP',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FANGCHENG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'FELIXSTOWE',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FERROL',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FLOROE',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FORCADOS',
+                'country' => 'NIGERIA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'FORTALEZA',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'FORT-DE-FRANCE',
+                'country' => 'MARTINIQUE',
+                'cluster' => 'CARIBBEAN SEA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'FOS SUR MER',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FOSHAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'FOS-SUR-MER',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FREDERICIA',
+                'country' => 'DENMARK',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FREDERIKSTAD',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FREEMANTLE',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'FREEPORT',
+                'country' => 'MALTA',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FREEPORT (BAHAMAS)',
+                'country' => 'BAHAMAS',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'FREETOWN',
+                'country' => 'SIERRA LEONE',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'FREMANTLE',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'FUJAIRAH',
+                'country' => 'U. A. E.',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'FUQING/XIAMEN',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'FUSA',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'FUZHOU',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'GABORONE',
+                'country' => 'BOTSWANA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'GALLICO',
+                'country' => 'ITALY',
+                'cluster' => 'ITALY CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GAOMING',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'GAVLE',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GDANSK',
+                'country' => 'POLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GDYNIA',
+                'country' => 'POLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GEBZE',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GEMLIK',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GENERAL SANTOS',
+                'country' => 'PHILIPPINES',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'GENOA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GEORGETOWN',
+                'country' => 'GUYANA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'GIBRALTAR',
+                'country' => 'GIBRALTAR',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GIJON',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GIOIA TAURO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GOTHENBURG',
+                'country' => 'SWEDEN',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GRANGE MOUTH',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GRANGEMOUTH',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GRAVESEND',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GREENOCK',
+                'country' => 'UNITED KINGDOM CLUSTER',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GREENVILLE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'GRIDLEY',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'GUAM',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'GUANGZHOU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'GUANTA',
+                'country' => 'VENEZUELA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'GUATEMALA CITY',
+                'country' => 'GUATEMALA',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'GUAYAQUIL',
+                'country' => 'ECUADOR',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'HAAVIK',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAIFA',
+                'country' => 'ISRAEL',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAIKOU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HAIPHONG',
+                'country' => 'VIETNAM',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HAKATA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HALDIA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'HALIFAX APT',
+                'country' => 'CANADA',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'HAMBURG',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAMBURG PARK',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAMINA',
+                'country' => 'FINLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HARARE',
+                'country' => 'ZIMBABWE',
+                'cluster' => 'Mozambique Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'HAREID',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAUGESUND',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAVANA',
+                'country' => 'CUBA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'HAYDARPASA',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HAZIRA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'HELSINGBORG',
+                'country' => 'SWEDEN',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HELSINKI',
+                'country' => 'FINLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HERAKLION',
+                'country' => 'GREECE',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HIROSHIMA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HO CHI MINH CITY',
+                'country' => 'VIETNAM',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HODEIDAH',
+                'country' => 'YEMEN',
+                'cluster' => 'Saudi Arabia Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'HONG KONG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HONOLULU',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'HOUSTON',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'HUANGPU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HUANGSHI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'IKSAN',
+                'country' => 'KOREA, SOUTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ILYICHEVSK',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'INCHON',
+                'country' => 'KOREA, SOUTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'INDIANAPOLIS',
+                'country' => 'UNITES STATES',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'IQUIQUE',
+                'country' => 'CHILE',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ISHIKARI SHINKO',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ISKENDERUN',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ISTANBUL',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ITAJAI',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'IZMIR',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'IZMIT KORFEZI',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'JACKSONVILLE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'JAKARTA',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'JAWAHARLAL NEHRU',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'JEBEL ALI',
+                'country' => 'U. A. E.',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'JEDAH',
+                'country' => 'SAUDI ARABIA',
+                'cluster' => 'Saudi Arabia Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'JIANGMEN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'JIUJIANG',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'JOHANNESBURG',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'JUBAIL',
+                'country' => 'SAUDI ARABIA',
+                'cluster' => 'Saudi Arabia Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KALININGRAD',
+                'country' => 'RUSSIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KANDLA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KANSAS CITY',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'KAOHSIUNG',
+                'country' => 'TAIWAN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'KARACHI',
+                'country' => 'PAKISTAN',
+                'cluster' => 'Pakistan Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KARLSRUHE',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KEELUNG',
+                'country' => 'TAIWAN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'KHALIFA BIN SALMAN',
+                'country' => 'BAHRAIN',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KHARTOUM',
+                'country' => 'DJIBOUTI',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'KHOR AL FAKKAN',
+                'country' => 'U.A.E',
+                'cluster' => 'UNITES ARAB EMIRATES CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KLAIPEDA',
+                'country' => 'LITHUANIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KOBE',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'KOLKATA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KOPER',
+                'country' => 'SLOVENIA',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KOTKA',
+                'country' => 'FINLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KRAICHTAL',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KRISTIANSAND',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KUWAIT',
+                'country' => 'KUWAIT',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'KWANGYANG',
+                'country' => 'KOREA, SOUTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LA GOULETTE',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LA PALLICE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LA ROCHELLE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LA SPEZIA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LAEM CHABANG',
+                'country' => 'THAILAND',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LAGOS',
+                'country' => 'NIGERIA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'LANGAR',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LANSHI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LARVIK',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LAS PALMAS (ESP.)',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LATAKIA',
+                'country' => 'SYRIA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'LE HAVRE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LE PIREE',
+                'country' => 'GREECE',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LE VERDON',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LEAMINGTON SPA',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LEGHORN',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LEIXOES',
+                'country' => 'PORTUGAL',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LELIU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LIANYUNGANG',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LIBREVILLE',
+                'country' => 'GABON',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'LIMASSOL',
+                'country' => 'CYPRUS',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LISBON',
+                'country' => 'PORTUGAL',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LIVERPOOL',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LIVORNO',
+                'country' => 'ITALY',
+                'cluster' => 'ITALY CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LOME',
+                'country' => 'TOGO',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'LONDON',
+                'country' => 'UNITED KINGDOM CLUSTER',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LONG BEACH',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'LONGONI',
+                'country' => 'COMORE  ISLAND',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'LOS ANGELES',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ST LOUIS',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'LUANDA',
+                'country' => 'ANGOLA',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'LUDHIANA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'LYTTELTON',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MADRID',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MALABO',
+                'country' => 'EQUATORIAL GUINEA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'MALAGA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MALTA',
+                'country' => 'ITALY',
+                'cluster' => 'ITALY CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MANGALORE',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MANILA',
+                'country' => 'PHILIPPINES',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MANZANILLO (MEXICO)',
+                'country' => 'MEXICO',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MANZANILLO (PANAMA)',
+                'country' => 'PANAMA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MAPUTO',
+                'country' => 'MOZAMBIQUE',
+                'cluster' => 'Mozambique Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'MARIEL',
+                'country' => 'CUBA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MARIENHEIDE',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MARIN PONTEVEDRA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MARMAGAO',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MARPORT',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MARSAXLOKK',
+                'country' => 'MALTA',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MARSEILLE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MATADI',
+                'country' => 'CONGO, DEM. REP. OF',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'MELBOURNE',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MEMPHIS',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MERSIN',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MESAIEED',
+                'country' => 'QATAR',
+                'cluster' => 'UNITED ARAB EMIRATE CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MIAMI',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MINA QABOOS',
+                'country' => 'OMAN',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MINDELO',
+                'country' => 'CAPE VERDE ISLAND',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'MOBILE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MOIN',
+                'country' => 'COSTA RICA',
+                'cluster' => 'CARIBBEAN SEA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MOJI',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MOMBASA',
+                'country' => 'KENYA',
+                'cluster' => 'Kenya Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'MONROVIA',
+                'country' => 'LIBERIA',
+                'cluster' => 'IVORY COAST CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'MONTEREAU-FAULT-YONNE',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MONTEVIDEO',
+                'country' => 'URUGUAY',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'MONTOIR',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MONTREAL',
+                'country' => 'CANADA',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MUMBAI',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MUNDRA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MUSCAT',
+                'country' => 'OMAN',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MUUGA',
+                'country' => 'ESTONIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NAGOYA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NANCHANG',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NANHAI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NANJING',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NANSHA',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NANTONG',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NAOETSU',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NAPIER',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NAPLES',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NAVEGANTES',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'NELSON',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NEW DELHI',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'NEW ORLEANS',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'NEW PLYMOUTH',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NEW YORK',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'NEWARK',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'NHAVA SHEVA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'NIIGATA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NINGBO',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'NORFOLK',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'NORRKOPING',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NOUADHIBOU',
+                'country' => 'MAURITANIA',
+                'cluster' => 'NORTHERN WEST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'NOUAKCHOTT',
+                'country' => 'MAURITANIA',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'NOVOROSSIYSK',
+                'country' => 'RUSSIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'OAKLAND',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'OCOA BAY',
+                'country' => 'DOMINICAN REPUBLIC',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ODENSE',
+                'country' => 'DENMARK',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ODESSA',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'OMAEZAKI',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ONNE',
+                'country' => 'NIGERIA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => '(ALG) ORAN',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'OSAKA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'OSLO',
+                'country' => 'NORWAY',
+                'cluster' => 'Scandinavia Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'OULU',
+                'country' => 'FINLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PADANG',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PALERMO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PANJANG',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PARANAGUA',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'PASIR GUDANG',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PECEM',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'PENANG',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PERAWANG',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PHILADELPHIA',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PHILIPSBURG',
+                'country' => 'SAINT MARTIN',
+                'cluster' => 'Carribean Sea Cluster',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'PHNOM PENH',
+                'country' => 'CAMBODIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PIPAVAV',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'PIRAEUS',
+                'country' => 'GREECE',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PLOCE',
+                'country' => 'CROATIA',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'POINTE DES GALETS',
+                'country' => 'REUNION',
+                'cluster' => 'France Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'POINTE NOIRE',
+                'country' => 'CONGO',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'POINTE-A-PITRE',
+                'country' => 'GUADELOUPE',
+                'cluster' => 'Carribean Sea Cluster',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'PORCHEVILLE',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PORSTHMOUTH',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PORT AU PRINCE',
+                'country' => 'HAITI',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PORT CHALMERS',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PORT ELIZABETH',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PORT EVERGLADES',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PORT GALLICE',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PORT GENTIL',
+                'country' => 'GABON',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PORT KELANG',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PORT LOUIS',
+                'country' => 'MAURITIUS',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PORT QASIM',
+                'country' => 'PAKISTAN',
+                'cluster' => 'Pakistan Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'PORT REUNION',
+                'country' => 'REUNION',
+                'cluster' => 'France Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PORT SAID',
+                'country' => 'EGYPT',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PORT SUDAN',
+                'country' => 'SUDAN',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PORTBURY',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PORTVENDRES',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PORT-VENDRES',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'POTI',
+                'country' => 'GEORGIA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'POZZALO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PRAIA',
+                'country' => 'CAPE VERDE ISLAND',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PRETORIA',
+                'country' => 'SOUTH AFRICA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PUERTO BARRIOS',
+                'country' => 'GUATEMALA',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PUERTO DESEADO',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'PUERTO LIMON',
+                'country' => 'COSTA RICA',
+                'cluster' => 'CARIBBEAN SEA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PUERTO SANTO TOMAS DE CASTILLA',
+                'country' => 'GUATEMALA',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PUTZBRUNN',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'QAPCO',
+                'country' => 'QATAR',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'QINGDAO',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'QINHUANGDAO',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'QINZHOU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'RADES',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'RAUMA',
+                'country' => 'FINLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'RAVENNA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'RIGA',
+                'country' => 'LATVIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'RIJEKA',
+                'country' => 'CROATIA',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'RIO DE JANEIRO',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'RIO GRANDE',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'RIO HAINA',
+                'country' => 'DOMINICAN REPUBLIC',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'RONGQI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ROSARIO',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'ROTTERDAM',
+                'country' => 'NETHERLANDS',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ROUEN',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SALALAH',
+                'country' => 'OMAN',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SALERNO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SALVADOR',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SAMSUN',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SAN ANTONIO',
+                'country' => 'CHILE',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'SAN FRANCISCO',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SAN PEDRO',
+                'country' => 'IVORY COAST',
+                'cluster' => 'Ivory Coast Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'SANGCHENG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SANSHAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SANSHUI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SANTO DOMINGO',
+                'country' => 'DOMINICAN REPUBLIC',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'SANTOS',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SAO FRANCISCO DO SUL',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SAVANNAH',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'SEATTLE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            // [
+            //     'place' => 'Select Origin',
+            //     'country' => 'Country',
+            //     'cluster' => 'Cluster',
+            //     'route' => 'Route',
+            // ],
+
+            [
+                'place' => 'SEMARANG',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SENTO SE',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SETE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SETUBAL',
+                'country' => 'PORTUGAL',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SEVILLE',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SFAX',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SHAHID RAJAEE',
+                'country' => 'IRAN',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SHANGHAI',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SHANTOU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SHARJAH',
+                'country' => 'U. A. E.',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SHEKOU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SHIMIZU',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SHUAIBA',
+                'country' => 'KUWAIT',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SHUNDE',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SHUWAIKH',
+                'country' => 'KUWAIT',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SIHANOUKVILLE',
+                'country' => 'CAMBODIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SINES',
+                'country' => 'PORTUGAL',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SINGAPORE',
+                'country' => 'SINGAPORE',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SKIKDA',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SOHAR',
+                'country' => 'OMAN',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SONGKHLA',
+                'country' => 'THAILAND',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SOUTHAMPTON',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ST.PETERSBURG',
+                'country' => 'RUSSIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'STARACHOWICE',
+                'country' => 'POLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'STOCKHOLM',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'STRATFORD-UPON-AVON',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SUAPE',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SURABAYA',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SWANSCOMBE',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SWANSEA',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SYDNEY',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SZCZECIN',
+                'country' => 'POLAND',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TAICANG',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TAICHUNG',
+                'country' => 'TAIWAN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TAIPEI',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TAIZHOU',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TAKORADI',
+                'country' => 'GHANA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'TALLINN',
+                'country' => 'ESTONIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TAMATAVE',
+                'country' => 'MADAGASCAR',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'TAMWORTH',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TANGA',
+                'country' => 'TANZANIA',
+                'cluster' => 'Kenya Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'TANGER',
+                'country' => 'MOROCCO',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TANJUNG PELEPAS',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TANJUNG PRIOK',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TARANTO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TARRAGONA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TARTUS',
+                'country' => 'SYRIA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'TAURANGA',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TEESPORT',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TEMA',
+                'country' => 'GHANA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'TENERIFE',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'THAMESPORT',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'THESSALONIKI',
+                'country' => 'GREECE',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TIANJIN / XINGANG',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TILBURY',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TOAMASINA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TOKYO',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'TOMAKOMAI',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'TORONTO',
+                'country' => 'CANADA',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'TOULON',
+                'country' => 'FRANCE',
+                'cluster' => 'FRANCE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TRABZON',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TRAPANI',
+                'country' => 'ITALY',
+                'cluster' => 'ITALY CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TRIESTE',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TRIPOLI',
+                'country' => 'LIBYA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TUNIS',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TUTICORIN',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'VADO LIGURE',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VALENCIA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VALPARAISO',
+                'country' => 'CHILE',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'VANCOUVER',
+                'country' => 'CANADA',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'VARNA',
+                'country' => 'BULGARIA',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VASTERAS',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VENEZIA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VERA CRUZ',
+                'country' => 'MEXICO',
+                'cluster' => 'Middle America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'VIGO',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VILA DO CONDE',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'VILLA CORTESE',
+                'country' => 'ITALY',
+                'cluster' => 'ITALY CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VILLAGARCIA DE AROSA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VISAPHAPATNAM',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'VITORIA',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'VUNG TAU',
+                'country' => 'VIETNAM',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'WALLHAMN',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'WALVIS BAY',
+                'country' => 'NAMIBIA',
+                'cluster' => 'South Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'WEIHAI',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'WELLINGTON (NZ)',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'WENZHOU',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'WUHAN',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'WUHU',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'XIAMEN',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'XIAOLAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YANGSHAN',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YANGZHOU',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YANTAI',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YANTIAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YICHANG',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YILPORT',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'YOKKAICHI',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YOKOHAMA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZARATE',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'ZEEBRUGGE',
+                'country' => 'BELGIUM',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'ZHANGJIAGANG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZHANJIANG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZHAOQING',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZHAPU',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZHENJIANG',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZHONGSHAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ZHUHAI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MAKASSAR',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'IMMINGHAM',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VALENCE',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NEWTOWN',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'KUMPORT',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LUZHOU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SAGUNTO',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AHUS',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BERGAMO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CORINTO',
+                'country' => 'NICARAGUA',
+                'cluster' => 'MIDDLE AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'POLA DE LENA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TEKIRDAG',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VLISSINGEN',
+                'country' => 'NETHERLANDS',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DETROIT',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MINNEAPOLIS',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'KAMPONG SAOM',
+                'country' => 'CAMBODIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => '(ARG) ORAN',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'BELEM',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'LAS PALMAS (ARG.)',
+                'country' => 'ARGENTINA',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'SANTANDER',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'Bandar Shahid Rajaee',
+                'country' => 'IRAN',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'MISURATA',
+                'country' => 'LIBYA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'VILLANUOVA SUL CLISI',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GIUSSANO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NASSAU',
+                'country' => 'BAHAMAS',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'COLOMBO (BR.)',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'KRISHNAPATNAM',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'ST MARTIN',
+                'country' => 'SAINT MARTIN',
+                'cluster' => 'Carribean Sea Cluster',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'PAVIA',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'CHANG ON',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PARAMARIBO',
+                'country' => 'SURINAME',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'BAR',
+                'country' => 'MONTENEGRO',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'YANGON',
+                'country' => 'MYANMAR',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'GUSTAVIA',
+                'country' => 'GUADELOUPE',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'TOYAMA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LOUISVILLE',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'WILLEMSTAD',
+                'country' => 'CURACAO',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'BOURGANEUF',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'COLUMBUS',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'VISHAKHAPATNAM',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'San Juan',
+                'country' => 'PERU',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PASIR PANJANG',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ITAPOA',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'GALVESTON',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PYEONGTAEK',
+                'country' => 'KOREA, SOUTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ULSAN',
+                'country' => 'KOREA, SOUTH',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HAMBANTOTA',
+                'country' => 'SRI LANKA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SANBU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CHENGHAI LAIWU',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SOUSSE',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'WORCESTER',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'JIANGYIN',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'DENVER',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'YUNFU',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SANTA CRUZ DE LA PALMA',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MINA ABDULLAH',
+                'country' => 'KUWAIT',
+                'cluster' => 'SAUDI ARABIA CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'Lanzarote',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'Shatian',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => '(CANADA) ODESSA',
+                'country' => 'CANADA',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'Puerto del Rosario-Fuerteventura',
+                'country' => 'SPAIN',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AIKAKITA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'KOCAELI',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NOUMEA',
+                'country' => 'NEW CALEDONIA',
+                'cluster' => 'Caribbean Sea Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'MALMO',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DONGGUAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SAN BENEDETTO',
+                'country' => 'ITALY',
+                'cluster' => 'Italy Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'LAHORE',
+                'country' => 'PAKISTAN',
+                'cluster' => 'Pakistan Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'SOCETU',
+                'country' => 'ROMANIA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'Nashville',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ASTARA',
+                'country' => 'AZERBAIJAN',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'ACCRA',
+                'country' => 'GHANA',
+                'cluster' => 'Central West Africa Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ALAGOINHAS',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'CRANFORD',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'QINGXI',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'St Louis-de-Montferrand',
+                'country' => 'FRANCE',
+                'cluster' => 'France Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'Moroni',
+                'country' => 'COMORE ISLAND',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'ARKANSAS CITY',
+                'country' => 'UNITED STATES',
+                'cluster' => 'NORTH AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'AALBORG',
+                'country' => 'DENMARK',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'NACALA',
+                'country' => 'MOZAMBIQUE',
+                'cluster' => 'Mozambique Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'AITOS',
+                'country' => 'BULGARIA',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'SENDAI',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => '(BG)BATA',
+                'country' => 'BULGARIA',
+                'cluster' => 'Greece Cluster',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'Umm Qasr',
+                'country' => 'IRAQ',
+                'cluster' => 'Iran Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BATUMI',
+                'country' => 'GEORGIA',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'AL AIN',
+                'country' => 'U.A.E.',
+                'cluster' => 'United Arab Emirates Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'VILLETA',
+                'country' => 'PARAGUAY',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'YARIMCA',
+                'country' => 'TURKEY',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'BISCHWEIER',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DURBACH',
+                'country' => 'GERMANY',
+                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'TOYAMASHINKO',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => '(UKRAINE) ODESSA',
+                'country' => 'UKRAINE',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'HEFEI',
+                'country' => 'PRE',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'WESTPORT/PORT KLANG',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MOGADISHU',
+                'country' => 'SOMALIA',
+                'cluster' => 'HOA AND EAST AFRICA CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'TIMARU',
+                'country' => 'NEW ZEALAND',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ANQING',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'SAN VICENTE',
+                'country' => 'CHILE',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'HUNG YEN',
+                'country' => 'VIETNAM',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'AL QAHMAH',
+                'country' => 'SAUDI ARABIA',
+                'cluster' => 'Saudi Arabia Cluster',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'HALMSTAD',
+                'country' => 'SWEDEN',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'GAOLAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BENOA',
+                'country' => 'INDONESIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'YIBIN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'GHAZAOUET',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MOSS',
+                'country' => 'NORWAY',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PAITA',
+                'country' => 'PERU',
+                'cluster' => 'West Coast South America Cluster',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'ITAGUAI',
+                'country' => 'BRAZIL',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'YUEYANG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'Terport (San Antonio)',
+                'country' => 'PARAGUAY',
+                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+                'route' => 'X6',
+            ],
+
+            [
+                'place' => 'HUADU',
+                'country' => 'PRN',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'ORKANGER',
+                'country' => 'NORWAY',
+                'cluster' => 'SCANDINAVIA CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'MAJUNGA',
+                'country' => 'MADAGASCAR',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'HAMADA',
+                'country' => 'JAPAN',
+                'cluster' => 'NORTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'XINAN',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'LIANJIANG',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'HALUL',
+                'country' => 'QATAR',
+                'cluster' => 'UNITED ARAB EMIRATE CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'BERDSK',
+                'country' => 'RUSSIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'DJEN-DJEN',
+                'country' => 'ALGERIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KAMSAR',
+                'country' => 'GUINEA',
+                'cluster' => 'Senegal Cluster',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'BIZERTE',
+                'country' => 'TUNISIA',
+                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KRIBI',
+                'country' => 'CAMEROON',
+                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'DARWIN',
+                'country' => 'AUSTRALIA',
+                'cluster' => 'OCEANIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'BOR',
+                'country' => 'RUSSIA',
+                'cluster' => 'EASTERN EUROPE CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KAKINADA',
+                'country' => 'INDIA',
+                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+                'route' => 'W2',
+            ],
+
+            [
+                'place' => 'ILLICHIVSK',
+                'country' => 'UKRAINE',
+                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'PUERTO CORTES',
+                'country' => 'HONDURAS',
+                'cluster' => 'MIDDLE AMERICA CLUSTER',
+                'route' => 'W4',
+            ],
+
+            [
+                'place' => 'PORT VICTORIA',
+                'country' => 'SEYCHELLES',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'RUGAO',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'CRANBROOK',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'Taicheng (Taishai)',
+                'country' => 'PRS',
+                'cluster' => 'GREATER CHINA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'MUTSAMUDU',
+                'country' => 'COMORE ISLAND',
+                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+                'route' => 'W5',
+            ],
+
+            [
+                'place' => 'PILAR',
+                'country' => 'PHILIPPINES',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
+
+            [
+                'place' => 'PORTSMOUTH',
+                'country' => 'UNITED KINGDOM',
+                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+                'route' => 'W3',
+            ],
+
+            [
+                'place' => 'KUCHING',
+                'country' => 'MALAYSIA',
+                'cluster' => 'SOUTH EAST ASIA CLUSTER',
+                'route' => 'W1',
+            ],
 
         ];
 
         foreach ($loadings as $loading) {
             Loading::create([
-                .'port' => $loading->port,
-                .'place' => $loading->place,
-                .'country' => $loading->country,
-                .'cluster' => $loading->cluster,
-                .'route' => $loading->route,
+                'port' => 'N/A',
+                'place' => $loading['place'],
+                'country' => $loading['country'],
+                'cluster' => $loading['cluster'],
+                'route' => $loading['route'],
             ]);
         }
 

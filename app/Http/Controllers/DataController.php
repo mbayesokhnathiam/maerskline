@@ -35,7 +35,7 @@ class DataController extends Controller
 
         $manifest_data = $fileContent['listeManifeste'];
 
-        // dd($manifest_data[0]['listConteneur']);
+        dd($fileContent);
 
         foreach ($manifest_data as $items) {
             if (is_array($items)) {
