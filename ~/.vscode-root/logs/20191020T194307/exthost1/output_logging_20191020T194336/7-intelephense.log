@@ -1,0 +1,12 @@
+[Info  - 19:43:36] Initialising intelephense 1.2.3
+[Info  - 19:43:37] Reading state from /home/ghost/maerskline/~/.vscode-root/User/workspaceStorage/4f079e83434e8b80f63d9c29d377f251/bmewburn.vscode-intelephense-client/3182ccfa.
+[Info  - 19:43:48] Initialised in 12223 ms
+[Warn  - 19:43:54] file:///home/ghost/maerskline/vendor/fzaninotto/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+ApplicationInsights:CorrelationIdManager [ { Error: getaddrinfo ENOTFOUND dc.services.visualstudio.com dc.services.visualstudio.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+    errno: 'ENOTFOUND',
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'dc.services.visualstudio.com',
+    host: 'dc.services.visualstudio.com',
+    port: 443 } ]

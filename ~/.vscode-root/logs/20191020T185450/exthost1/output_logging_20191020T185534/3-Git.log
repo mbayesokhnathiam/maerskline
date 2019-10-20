@@ -1,0 +1,202 @@
+Looking for git in: git
+Using git 2.23.0 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+> git config --get commit.template
+Open repository: /home/ghost/maerskline
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git check-ignore -v -z --stdin
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :public/js/datascript.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/js/functions.js
+> git show :public/js/datascript.js
+> git show :public/js/functions.js
+> git show :public/js/datascript.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/js/functions.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git show :routes/console.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :app/Http/Controllers/BlController.php
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :resources/views/bl/index.blade.php
+> git show :app/Http/Controllers/BlController.php
+> git show :app/Http/Controllers/DataController.php
+> git check-ignore -v -z --stdin
+> git show :resources/views/gainde/index.blade.php
+> git show :app/Http/Controllers/DataController.php
+> git show :.lando.yml
+> git show :app/Http/Controllers/DataController.php
+> git show :app/Http/Controllers/VesselController.php
+> git check-ignore -v -z --stdin
+> git show :app/Shipping.php
+> git show :app/User.php
+> git show :app/Vesselle.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git show :app/Vesselle.php
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git show :app/Vesselle.php
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :app/Vesselle.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop_mjohnson
+> git rev-parse --symbolic-full-name develop_mjohnson@{u}
+> git rev-list --left-right develop_mjohnson...refs/remotes/origin/develop_mjohnson
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose

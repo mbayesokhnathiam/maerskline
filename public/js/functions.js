@@ -24,8 +24,9 @@ function handleDatasFromUrl(url, request) {
     let datas = {}
     switch (splitted[0]) {
         case '/gainde/manifesteGrid.action':
+
             datas = extractDatas({
-                records: 0
+                listeManifeste: []
             }, request.responseText)
             getAllDatas(url, datas.records)
             break;
@@ -79,4 +80,9 @@ function includeFileSaver() {
     script.type = 'text/javascript';
     script.src = 'https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js';
     document.head.appendChild(script);
+}
+
+function updateLocalStorageItem(item) {
+    let oldValue = parseInt(localStorage.getItem(item))
+    localStorage.setItem(item, oldValue++)
 }
