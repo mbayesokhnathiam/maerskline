@@ -1,0 +1,1 @@
+{"lieu_embarq":"BJCOO","pays_dest":"SN","nom_exp":"INEO SCLE FERROVIAIRE","num_bl":"S317253717","destinaire":"APIX SA","commodity":" Groupe Electrogene Fixe sur   20'bolster: GCNU 3000630","conteneurs":[["....3000630","x","20","BULKER"]],"bateau":{"manifMoyenTransport":"GRANDE CONGO        ","manifDateArrivee":"05/09/2019"}}
