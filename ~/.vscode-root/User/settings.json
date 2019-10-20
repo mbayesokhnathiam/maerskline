@@ -1,9 +1,0 @@
-{
-    "[json]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "window.zoomLevel": -1
-}
