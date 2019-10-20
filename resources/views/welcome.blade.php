@@ -80,10 +80,12 @@
             @endif
 
             <div class="content">
+                <span style="color: #29292d; font-family: Spy Agency;display: flex;font-size: 4.5rem;padding-left: 22%;padding-bottom: 5%;letter-spacing: .6rem;">M.C.T</span>
                 <a href="{{ url('/home') }}">
                     <img class="img-fluid" src="{{ asset('img/mearskline.png') }}">
                 </a>
             </div>
         </div>
+
     </body>
 </html>

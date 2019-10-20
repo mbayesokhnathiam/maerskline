@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\Shipping;
 use App\User;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 
@@ -26,6 +28,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $shipping_lines = Shipping::paginate(6);
+
+        View::share('shipping_lines', $shipping_lines);
+
         Schema::defaultStringLength(191);
 
         if (User::count() == 0) {

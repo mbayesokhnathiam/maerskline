@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Vesselle;
 use Illuminate\Http\Request;
 
 class VesselController extends Controller
@@ -13,7 +14,8 @@ class VesselController extends Controller
      */
     public function index()
     {
-        return view('vessel.index');
+        $vessels = Vesselle::with('shipping')->paginate(5);
+        return view('vessel.index', ['vessels' => $vessels]);
     }
 
     /**
