@@ -13,6 +13,7 @@ class ShippingsTableSeeder extends Seeder
     public function run()
     {
         $shipping = [
+            'DEFAULT',
             'PORTLINE',
             'CMA/DELMAS',
             'BOLLUDA',
