@@ -33,23 +33,29 @@ class DataController extends Controller
         $fileToRead = Storage::get($file);
         $fileContent = json_decode($fileToRead, true);
 
-        // $manifest_data = $fileContent['listeManifeste'];
-
         // dd($fileContent);
 
         foreach ($fileContent as $bls) {
-            highlight_string(json_encode($bls, JSON_PRETTY_PRINT));
+            // highlight_string(json_encode($bls, JSON_PRETTY_PRINT));
 
             // Check if the destination is Senegal or Mali
             if (strtoupper($bls['pays_dest']) === 'SN' || strtoupper($bls['pays_dest']) === 'ML') {
 
                 // Check if the bl has containers
                 if(!empty($bls['conteneurs'])) {
+
+                    $blCode = $this->isAplha($this->getContainerLastChar($bls['num_bl'])) ? $this->getContainerWithoutLastChar($bls['num_bl']) : $bls['num_bl'];
+
                     $bltype = $this->getBlType($bls['conteneurs'][0]);
 
-                    echo $twenty_feets = $this->get20s($bls['conteneurs']);
+                    $twenty_feets_number = $this->get20s($bls['conteneurs']);
 
-                    echo $fourty_feets = $this->get40s($bls['conteneurs']);
+                    $fourty_feets_number = $this->get40s($bls['conteneurs']);
+
+                    $twenty_feets_code = $this->get20sContainers($bls['conteneurs']);
+
+                    $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
+
                 }
 
             }
@@ -112,12 +118,68 @@ class DataController extends Controller
         $n_40 = 0;
 
         foreach ($blContainers as $container) {
-            if (substr($container[2], 0, 2) !== '20') {
+            if (substr($container[2], 0, 2) !== '40') {
                 $n_40++;
             }
         }
 
         return $n_40;
+    }
+
+    /**
+     * Get the concatenated of 20 feet containers' id.
+     *
+     * @param Array $blContainers
+     * @return String
+     */
+    public function get20sContainers($blContainers)
+    {
+        $n_20 = 0;
+
+        foreach ($blContainers as $container) {
+            if (substr($container[2], 0, 2) === '20') {
+                $n_20 .= trim($container[0]) . ' | ';
+            }
+        }
+
+        return $n_20;
+    }
+
+    /**
+     * Get the concatenated of 40 feet containers' id.
+     *
+     * @param Array $blContainers
+     * @return String
+     */
+    public function get40sContainers($blContainers)
+    {
+        $c_40 = "";
+
+        foreach ($blContainers as $container) {
+            if (substr($container[2], 0, 2) !== '40') {
+                $c_40 .= trim($container[0]) . ' | ';
+            }
+        }
+
+        return $c_40;
+    }
+
+    /** */
+    public function getContainerLastChar($container)
+    {
+        return substr($container, -1);
+    }
+
+    /** */
+    public function isAplha($string)
+    {
+        return ctype_alpha($string);
+    }
+
+    /** */
+    public function getContainerWithoutLastChar($container)
+    {
+        return substr($container, 0, strlen($container) -1);
     }
 
 }
