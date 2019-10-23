@@ -1,18 +1,35 @@
-(function(window, doc) {
+(function (window, doc) {
+
     window.addEventListener('DOMContentLoaded', (event) => {
+
+        // Upload file
         form = doc.getElementById('form-upload');
         btnUpload = doc.getElementById('btn-upload');
         fileInput = doc.getElementById('gainde-file');
 
-        btnUpload.addEventListener('click', function(e) {
-            if (fileInput) {
-                fileInput.click();
-            }
-            e.preventDefault();
-        }, false);
+        if (btnUpload) {
+            btnUpload.addEventListener('click', function (e) {
+                if (fileInput) {
+                    fileInput.click();
+                }
+                e.preventDefault();
+            }, false);
+        }
 
-        fileInput.addEventListener('change', function() {
-            form.submit();
-        }, false);
+        if (fileInput) {
+            fileInput.addEventListener('change', function () {
+                form.submit();
+            }, false);
+        }
+
+        // Save user
+        btnSaveUser = doc.getElementById('save-user');
+
+        if (btnSaveUser) {
+            btnSaveUser.addEventListener('click', function (e) {
+                doc.getElementById('user-add-modal').submit();
+            });
+        }
     });
+
 })(window, document);
