@@ -3,7 +3,11 @@
 @section('content')
 <div class="container">
     <div class="align-items-end d-flex justify-content-end">
-        <a href="" class="btn bg-maersk-primary py-2 rounded-0 shadow text-white font-weight-bold" data-toggle="modal" id="import-modal" data-target="#importFromGainde">Impoter de Gainde <i class="fas fa-download"></i></a>
+        <form action="/gainde" enctype="multipart/form-data" id="form-upload" method="POST">
+            @csrf
+            <input accept="text/plain" class="d-none" id="gainde-file" name="gainde_file" required type="file">
+            <button class="btn bg-maersk-primary py-2 rounded-0 shadow text-white font-weight-bold" id="btn-upload">Impoter de Gainde <i class="fas fa-download"></i></button>
+        </form>
     </div>
 
     <div class="row justify-content-center pt-3">
@@ -43,49 +47,6 @@
             </div>
         </div>
 
-    </div>
-
-    <div class="modal fade" id="importFromGainde" tabindex="-1" role="dialog" aria-labelledby="importFromGaindeTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content border-0 rounded-0">
-            <div class="modal-header">
-                <h5 class="modal-title" id="importFromGaindeTitle">Formulaire</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <form action="" class="form" id="import-form">
-
-                    <div class="form-group">
-                        <label for="startDate">Date de debut <span class="text-danger">*</span></label>
-                        <input type="date" class="form-control rounded-0" id="startDate" name="rechercheManifesteForm.datManifDateDebut" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="endDate">Date de fin <span class="text-danger">*</span></label>
-                        <input type="date" class="form-control rounded-0" id="endDate" name="rechercheManifesteForm.datManifDateFin" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="annee">Numero Manifeste <span class="text-danger">*</span></label>
-                        <div class="d-flex justify-content-start">
-                            <input type="text" class="form-control rounded-0 w-50 mr-2" id="year" name="rechercheManifesteForm.numManifAnnee" placeholder="Annee" required>
-                            <input type="text" class="form-control rounded-0 w-50" id="office" name="rechercheManifesteForm.numManifCodeBur" placeholder="Bureau" required>
-                        </div>
-                    </div>
-
-                </form>
-
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary rounded-0" data-dismiss="modal">Fermer</button>
-                <button type="button" class="btn bg-maersk-primary rounded-0 text-white">Importer</button>
-            </div>
-            </div>
-        </div>
     </div>
 </div>
 @endsection

@@ -15,7 +15,7 @@ class CreateLoadingsTable extends Migration
     {
         Schema::create('loadings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('port')->unique();
+            $table->string('port');
             $table->string('place');
             $table->string('country');
             $table->string('cluster');

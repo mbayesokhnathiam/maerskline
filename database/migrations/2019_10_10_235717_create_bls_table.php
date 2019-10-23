@@ -17,13 +17,14 @@ class CreateBlsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('loading_id');
             $table->unsignedBigInteger('vesselle_id');
-            $table->string('number')->unique();
+            $table->string('bl_number')->unique();
             $table->dateTime('arrival_date');
             $table->string('cargo_type');
             $table->string('shipper');
             $table->string('order');
             $table->string('commodity');
             $table->integer('number_of_20');
+            $table->integer('number_of_40');
             $table->string('container_20');
             $table->string('container_40');
             $table->string('country');
