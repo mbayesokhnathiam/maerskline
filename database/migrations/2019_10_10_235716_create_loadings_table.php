@@ -15,11 +15,13 @@ class CreateLoadingsTable extends Migration
     {
         Schema::create('loadings', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('port_id');
             $table->string('port');
             $table->string('place');
             $table->string('country');
             $table->string('cluster');
             $table->string('route');
+            $table->foreign('port_id')->references('id')->on('port_codes');
             $table->timestamps();
         });
     }

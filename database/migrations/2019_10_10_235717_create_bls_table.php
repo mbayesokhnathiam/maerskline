@@ -15,7 +15,7 @@ class CreateBlsTable extends Migration
     {
         Schema::create('bls', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('loading_id');
+            $table->unsignedBigInteger('port_id');
             $table->unsignedBigInteger('vesselle_id');
             $table->string('bl_number')->unique();
             $table->dateTime('arrival_date');
@@ -29,7 +29,7 @@ class CreateBlsTable extends Migration
             $table->string('container_40');
             $table->string('country');
             $table->string('city');
-            $table->foreign('loading_id')->references('id')->on('loadings');
+            $table->foreign('port_id')->references('id')->on('port_codes');
             $table->foreign('vesselle_id')->references('id')->on('vesselles');
             $table->timestamps();
         });

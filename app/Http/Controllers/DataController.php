@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bl;
 use App\Shipping;
 use App\Vesselle;
 use Illuminate\Http\Request;
@@ -857,10 +858,27 @@ class DataController extends Controller
 
                     $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
 
-                    $found = Vesselle::find($blCode) ? true : false;
+                    $found = Bl::find(['bl_number' => $blCode]) ? true : false;
 
                     if(!$found) {
-
+                        Bl::insert([
+                            'bl_number' => $blCode,
+                            'arrival_date' => $bls['bateau']['manifDateArrivee'],
+                            'cargo_type' => $bltype,
+                            'shipper' => $bls['nom_exp'],
+                            'commodity' => $bls['commodity'],
+                            'number_of_20' => $twenty_feets_number,
+                            'number_of_40' => $fourty_feets_number,
+                            'container_20' => $twenty_feets_code,
+                            'container_40' => $fourty_feets_code,
+                        ]);
+                    } else {
+                        Bl::where('bl_number', $blCode)->update([
+                            'number_of_20' => $twenty_feets_number,
+                            'number_of_40' => $fourty_feets_number,
+                            'container_20' => $twenty_feets_code,
+                            'container_40' => $fourty_feets_code,
+                        ]);
                     }
 
                 }
