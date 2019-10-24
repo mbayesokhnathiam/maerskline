@@ -40,9 +40,18 @@ Route::group(['prefix' => 'bls', 'middleware' => 'auth'], function () {
 
 });
 
-Route::get('/gainde', 'DataController@index');
-Route::post('/gainde', 'DataController@import');
+Route::group(['prefix' => 'gainde', 'middleware' => 'auth'], function () {
+	Route::get('/', 'DataController@index');
+	Route::post('/', 'DataController@import');
+});
 
-Route::get('users', 'UserController@index');
-Route::post('users', 'UserController@store');
-Route::get('users/{id}/profile', 'UserController@show');
+Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
+	Route::get('/', 'UserController@index');
+	Route::post('/', 'UserController@store');
+	Route::get('/{id}/profile', 'UserController@show');
+});
+
+Route::group(['prefix' => 'export', 'middleware' => 'auth'], function() {
+    Route::get('/excel', 'ExportController@exportUsers');
+});
+

@@ -6,10 +6,16 @@
             <div class="col-10">
                 <div class="w-100 d-flex align-items-center justify-content-between">
                     <h1>Gestion Utilisateurs</h1>
-                    <button class="btn btn-sm bg-maersk-primary rounded-0 shadow-sm text-white" data-toggle="modal" data-target="#userAddModal">
-                        Ajouter un utilisateur
-                        <i class="fas fa-user ml-2"></i>
-                    </button>
+                    <div>
+                        <button class="btn btn-sm bg-maersk-primary rounded-0 shadow-sm text-white mr-2" data-toggle="modal" data-target="#userAddModal">
+                            Ajouter un utilisateur
+                            <i class="fas fa-user ml-2"></i>
+                        </button>
+                        <a href="/export/excel" class="btn btn-outline-success btn-sm">
+                            Exporter
+                            <i class="fas fa-file-excel ml-2"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="mt-3 w-100">
                     @foreach ($users as $user)
