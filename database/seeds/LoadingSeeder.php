@@ -1,6 +1,7 @@
 <?php
 
 use App\Loading;
+use App\PortCodes;
 use Illuminate\Database\Seeder;
 
 class LoadingSeeder extends Seeder
@@ -14,7 +15,7 @@ class LoadingSeeder extends Seeder
     {
         $loadings = [
             [
-                'place' => 'AALESUND',
+                'place' => 'ALESUND',
                 'country' => 'NORWAY',
                 'cluster' => 'Scandinavia Cluster',
                 'route' => 'W3',
@@ -49,7 +50,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'ACAJUTLA',
+                'place' => 'ACAJUTLA, El Salvador',
                 'country' => 'EL SALVADOR',
                 'cluster' => 'Middle America Cluster',
                 'route' => 'W4',
@@ -83,12 +84,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'AGALEGA',
-                'country' => 'MAURITIUS',
-                'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
-                'route' => 'W5',
-            ],
+            // [
+            //     'place' => 'AGALEGA',
+            //     'country' => 'MAURITIUS',
+            //     'cluster' => 'SOUTHERN AFRICA AND ISLANDS CLUSTER',
+            //     'route' => 'W5',
+            // ],
 
             [
                 'place' => 'AGRIGENTO',
@@ -104,12 +105,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W2',
             ],
 
-            [
-                'place' => 'AHMEDNAGAR',
-                'country' => 'INDIA',
-                'cluster' => 'INDIA AND BANGLADESH CLUSTER',
-                'route' => 'W2',
-            ],
+            // [
+            //     'place' => 'AHMEDNAGAR',
+            //     'country' => 'INDIA',
+            //     'cluster' => 'INDIA AND BANGLADESH CLUSTER',
+            //     'route' => 'W2',
+            // ],
 
             [
                 'place' => 'AKITA',
@@ -188,12 +189,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'AMBRIZ',
-                'country' => 'ANGOLA',
-                'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
-                'route' => 'W5',
-            ],
+            // [
+            //     'place' => 'AMBRIZ',
+            //     'country' => 'ANGOLA',
+            //     'cluster' => 'CAMEROUN, ANGOLA AND DRC CLUSTER',
+            //     'route' => 'W5',
+            // ],
 
             [
                 'place' => 'AMSTERDAM',
@@ -210,7 +211,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'ANNABA',
+                'place' => 'Annaba (ex Bone)',
                 'country' => 'ALGERIA',
                 'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
                 'route' => 'W3',
@@ -252,7 +253,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'AQABA',
+                'place' => 'Aqaba Free Zone',
                 'country' => 'JORDAN',
                 'cluster' => 'SAUDI ARABIA CLUSTER',
                 'route' => 'W2',
@@ -265,12 +266,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W4',
             ],
 
-            [
-                'place' => 'ARRECIFE',
-                'country' => 'SPAIN',
-                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'ARRECIFE',
+            //     'country' => 'SPAIN',
+            //     'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'ASALUYEH',
@@ -301,7 +302,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'ASUNCION',
+                'place' => 'Asuncion,   Paraguay',
                 'country' => 'PARAGUAY',
                 'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
                 'route' => 'X6',
@@ -356,12 +357,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'BAHIA BLANCA',
-                'country' => 'ARGENTINA',
-                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
-                'route' => 'X6',
-            ],
+            // [
+            //     'place' => 'BAHIA BLANCA',
+            //     'country' => 'ARGENTINA',
+            //     'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+            //     'route' => 'X6',
+            // ],
 
             [
                 'place' => 'BAHRAIN',
@@ -461,19 +462,19 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'BARRANQUILLA',
-                'country' => 'COLOMBIA',
-                'cluster' => 'Caribbean Sea Cluster',
-                'route' => 'W4',
-            ],
+            // [
+            //     'place' => 'BARRANQUILLA',
+            //     'country' => 'COLOMBIA',
+            //     'cluster' => 'Caribbean Sea Cluster',
+            //     'route' => 'W4',
+            // ],
 
-            [
-                'place' => 'BASSE TERRE',
-                'country' => 'GUADELOUPE',
-                'cluster' => 'Carribean Sea Cluster',
-                'route' => 'X6',
-            ],
+            // [
+            //     'place' => 'BASSE TERRE',
+            //     'country' => 'GUADELOUPE',
+            //     'cluster' => 'Carribean Sea Cluster',
+            //     'route' => 'X6',
+            // ],
 
             [
                 'place' => 'BASSENS',
@@ -518,7 +519,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'BEJAIA (BOUGIE)',
+                'place' => 'BEJAIA',
                 'country' => 'ALGERIA',
                 'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
                 'route' => 'W3',
@@ -538,19 +539,19 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'BELLBAY',
-                'country' => 'AUSTRALIA',
-                'cluster' => 'OCEANIA CLUSTER',
-                'route' => 'W1',
-            ],
+            // [
+            //     'place' => 'BELLBAY',
+            //     'country' => 'AUSTRALIA',
+            //     'cluster' => 'OCEANIA CLUSTER',
+            //     'route' => 'W1',
+            // ],
 
-            [
-                'place' => 'BENGHAZI',
-                'country' => 'LIBYA',
-                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'BENGHAZI',
+            //     'country' => 'LIBYA',
+            //     'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'BERBERA',
@@ -580,12 +581,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W5',
             ],
 
-            [
-                'place' => 'BIZERTA',
-                'country' => 'TUNISIA',
-                'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'BIZERTA',
+            //     'country' => 'TUNISIA',
+            //     'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'BLUFF',
@@ -608,12 +609,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W2',
             ],
 
-            [
-                'place' => 'BOSPERUS',
-                'country' => 'TURKEY',
-                'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'BOSPERUS',
+            //     'country' => 'TURKEY',
+            //     'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'BOSTON',
@@ -713,12 +714,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'BURNIE',
-                'country' => 'AUSTRALIA',
-                'cluster' => 'OCEANIA CLUSTER',
-                'route' => 'W1',
-            ],
+            // [
+            //     'place' => 'BURNIE',
+            //     'country' => 'AUSTRALIA',
+            //     'cluster' => 'OCEANIA CLUSTER',
+            //     'route' => 'W1',
+            // ],
 
             [
                 'place' => 'BUSAN',
@@ -749,18 +750,18 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'CAEN',
+                'place' => 'Caen, France',
                 'country' => 'FRANCE',
                 'cluster' => 'France Cluster',
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'CAGAYAN DE ORO',
-                'country' => 'PHILIPPINES',
-                'cluster' => 'SOUTH EAST ASIA CLUSTER',
-                'route' => 'W1',
-            ],
+            // [
+            //     'place' => 'CAGAYAN DE ORO',
+            //     'country' => 'PHILIPPINES',
+            //     'cluster' => 'SOUTH EAST ASIA CLUSTER',
+            //     'route' => 'W1',
+            // ],
 
             [
                 'place' => 'CAGLIARI',
@@ -770,7 +771,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'CAI LAN',
+                'place' => 'Cai Lan, Vietnam',
                 'country' => 'VIETNAM',
                 'cluster' => 'SOUTH EAST ASIA CLUSTER',
                 'route' => 'W1',
@@ -797,19 +798,19 @@ class LoadingSeeder extends Seeder
                 'route' => 'W2',
             ],
 
-            [
-                'place' => 'CALETA PAULA',
-                'country' => 'ARGENTINA',
-                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
-                'route' => 'X6',
-            ],
+            // [
+            //     'place' => 'CALETA PAULA',
+            //     'country' => 'ARGENTINA',
+            //     'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+            //     'route' => 'X6',
+            // ],
 
-            [
-                'place' => 'CALETERA',
-                'country' => 'COSTA RICA',
-                'cluster' => 'Caribbean Sea Cluster',
-                'route' => 'W4',
-            ],
+            // [
+            //     'place' => 'CALETERA',
+            //     'country' => 'COSTA RICA',
+            //     'cluster' => 'Caribbean Sea Cluster',
+            //     'route' => 'W4',
+            // ],
 
             [
                 'place' => 'CALLAO',
@@ -818,12 +819,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W4',
             ],
 
-            [
-                'place' => 'CAMPANA',
-                'country' => 'ARGENTINA',
-                'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
-                'route' => 'X6',
-            ],
+            // [
+            //     'place' => 'CAMPANA',
+            //     'country' => 'ARGENTINA',
+            //     'cluster' => 'EAST COAST SOUTH AMERICA CLUSTER',
+            //     'route' => 'X6',
+            // ],
 
             [
                 'place' => 'CAPE TOWN',
@@ -847,7 +848,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'CARTAGENA (SPAIN)',
+                'place' => 'Cartagena,Spain',
                 'country' => 'SPAIN',
                 'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
                 'route' => 'W3',
@@ -875,7 +876,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'CASTRIES',
+                'place' => 'Castries,   St Lucia',
                 'country' => 'ST LUCIA',
                 'cluster' => 'Caribbean Sea Cluster',
                 'route' => 'W4',
@@ -937,12 +938,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W4',
             ],
 
-            [
-                'place' => 'CHATELDON',
-                'country' => 'FRANCE',
-                'cluster' => 'FRANCE CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'CHATELDON',
+            //     'country' => 'FRANCE',
+            //     'cluster' => 'FRANCE CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'CHENGDU',
@@ -1092,7 +1093,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'CRISTOBAL',
+                'place' => 'Cristobel,   Panama',
                 'country' => 'PANAMA',
                 'cluster' => 'Caribbean Sea Cluster',
                 'route' => 'W4',
@@ -1134,21 +1135,14 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'DAR ES SALAM',
-                'country' => 'TANZANIA',
-                'cluster' => 'Kenya Cluster',
-                'route' => 'W5',
-            ],
-
-            [
-                'place' => 'DAVAO',
+                'place' => 'Davao,   Philliphines',
                 'country' => 'PHILIPPINES',
                 'cluster' => 'SOUTH EAST ASIA CLUSTER',
                 'route' => 'W1',
             ],
 
             [
-                'place' => 'DEGRAD DES CANNES.',
+                'place' => 'DEGRAD DES CANNES',
                 'country' => 'FRENCH GUIANA',
                 'cluster' => 'France Cluster',
                 'route' => 'W3',
@@ -1203,12 +1197,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'DUBAI',
-                'country' => 'U. A. E.',
-                'cluster' => 'United Arab Emirates Cluster',
-                'route' => 'W2',
-            ],
+            // [
+            //     'place' => 'DUBAI',
+            //     'country' => 'U. A. E.',
+            //     'cluster' => 'United Arab Emirates Cluster',
+            //     'route' => 'W2',
+            // ],
 
             [
                 'place' => 'DUBLIN',
@@ -1245,15 +1239,15 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'DUTCH HARBOUR',
-                'country' => 'UNITED STATES',
-                'cluster' => 'NORTH AMERICA CLUSTER',
-                'route' => 'W4',
-            ],
+            // [
+            //     'place' => 'DUTCH HARBOUR',
+            //     'country' => 'UNITED STATES',
+            //     'cluster' => 'NORTH AMERICA CLUSTER',
+            //     'route' => 'W4',
+            // ],
 
             [
-                'place' => 'EAST LONDON',
+                'place' => 'East London,   South Africa',
                 'country' => 'SOUTH AFRICA',
                 'cluster' => 'South Africa Cluster',
                 'route' => 'W5',
@@ -1267,7 +1261,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'EL AAIUN',
+                'place' => 'Laayoune (El Aaiun)',
                 'country' => 'MOROCCO',
                 'cluster' => 'WESTERN MEDITERRANEAN CLUSTER',
                 'route' => 'W3',
@@ -1281,7 +1275,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'EL TABLASO',
+                'place' => 'El Tablazo,   Venezuela',
                 'country' => 'VENEZUELA',
                 'cluster' => 'Caribbean Sea Cluster',
                 'route' => 'W4',
@@ -1336,12 +1330,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'FLOROE',
-                'country' => 'NORWAY',
-                'cluster' => 'Scandinavia Cluster',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'FLOROE',
+            //     'country' => 'NORWAY',
+            //     'cluster' => 'Scandinavia Cluster',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'FORCADOS',
@@ -1357,12 +1351,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'X6',
             ],
 
-            [
-                'place' => 'FORT-DE-FRANCE',
-                'country' => 'MARTINIQUE',
-                'cluster' => 'CARIBBEAN SEA CLUSTER',
-                'route' => 'W4',
-            ],
+            // [
+            //     'place' => 'FORT-DE-FRANCE',
+            //     'country' => 'MARTINIQUE',
+            //     'cluster' => 'CARIBBEAN SEA CLUSTER',
+            //     'route' => 'W4',
+            // ],
 
             [
                 'place' => 'FOS SUR MER',
@@ -1379,32 +1373,25 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'FOS-SUR-MER',
-                'country' => 'FRANCE',
-                'cluster' => 'France Cluster',
-                'route' => 'W3',
-            ],
-
-            [
                 'place' => 'FREDERICIA',
                 'country' => 'DENMARK',
                 'cluster' => 'Scandinavia Cluster',
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'FREDERIKSTAD',
-                'country' => 'NORWAY',
-                'cluster' => 'Scandinavia Cluster',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'FREDERIKSTAD',
+            //     'country' => 'NORWAY',
+            //     'cluster' => 'Scandinavia Cluster',
+            //     'route' => 'W3',
+            // ],
 
-            [
-                'place' => 'FREEMANTLE',
-                'country' => 'AUSTRALIA',
-                'cluster' => 'OCEANIA CLUSTER',
-                'route' => 'W1',
-            ],
+            // [
+            //     'place' => 'FREEMANTLE',
+            //     'country' => 'AUSTRALIA',
+            //     'cluster' => 'OCEANIA CLUSTER',
+            //     'route' => 'W1',
+            // ],
 
             [
                 'place' => 'FREEPORT',
@@ -1414,7 +1401,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'FREEPORT (BAHAMAS)',
+                'place' => 'Freeport,   Bahamas',
                 'country' => 'BAHAMAS',
                 'cluster' => 'Caribbean Sea Cluster',
                 'route' => 'W4',
@@ -1434,15 +1421,15 @@ class LoadingSeeder extends Seeder
                 'route' => 'W1',
             ],
 
-            [
-                'place' => 'FUJAIRAH',
-                'country' => 'U. A. E.',
-                'cluster' => 'United Arab Emirates Cluster',
-                'route' => 'W2',
-            ],
+            // [
+            //     'place' => 'FUJAIRAH',
+            //     'country' => 'U. A. E.',
+            //     'cluster' => 'United Arab Emirates Cluster',
+            //     'route' => 'W2',
+            // ],
 
             [
-                'place' => 'FUQING/XIAMEN',
+                'place' => 'FUQING',
                 'country' => 'PRE',
                 'cluster' => 'GREATER CHINA CLUSTER',
                 'route' => 'W1',
@@ -1567,12 +1554,12 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'GRANGE MOUTH',
-                'country' => 'UNITED KINGDOM',
-                'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'GRANGE MOUTH',
+            //     'country' => 'UNITED KINGDOM',
+            //     'cluster' => 'UNITED KINGDOM AND IRELAND CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'GRANGEMOUTH',
@@ -1624,14 +1611,14 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'GUANTA',
+                'place' => 'Guanta,   Venezuela',
                 'country' => 'VENEZUELA',
                 'cluster' => 'Caribbean Sea Cluster',
                 'route' => 'W4',
             ],
 
             [
-                'place' => 'GUATEMALA CITY',
+                'place' => 'Guatemala City,   Guatemala',
                 'country' => 'GUATEMALA',
                 'cluster' => 'Middle America Cluster',
                 'route' => 'W4',
@@ -1645,7 +1632,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'HAAVIK',
+                'place' => 'HAVIK',
                 'country' => 'NORWAY',
                 'cluster' => 'Scandinavia Cluster',
                 'route' => 'W3',
@@ -1700,19 +1687,19 @@ class LoadingSeeder extends Seeder
                 'route' => 'W3',
             ],
 
-            [
-                'place' => 'HAMBURG PARK',
-                'country' => 'GERMANY',
-                'cluster' => 'NORTH WEST CONTINENT CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'HAMBURG PARK',
+            //     'country' => 'GERMANY',
+            //     'cluster' => 'NORTH WEST CONTINENT CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
-            [
-                'place' => 'HAMINA',
-                'country' => 'FINLAND',
-                'cluster' => 'EASTERN EUROPE CLUSTER',
-                'route' => 'W3',
-            ],
+            // [
+            //     'place' => 'HAMINA',
+            //     'country' => 'FINLAND',
+            //     'cluster' => 'EASTERN EUROPE CLUSTER',
+            //     'route' => 'W3',
+            // ],
 
             [
                 'place' => 'HARARE',
@@ -1743,7 +1730,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'HAYDARPASA',
+                'place' => 'Haydarpasa,   Turkey',
                 'country' => 'TURKEY',
                 'cluster' => 'EASTERN MEDITERRANEAN CLUSTER',
                 'route' => 'W3',
@@ -1771,7 +1758,7 @@ class LoadingSeeder extends Seeder
             ],
 
             [
-                'place' => 'HERAKLION',
+                'place' => 'Iraklion (Heraklion)',
                 'country' => 'GREECE',
                 'cluster' => 'Greece Cluster',
                 'route' => 'W3',
@@ -5050,7 +5037,7 @@ class LoadingSeeder extends Seeder
 
         foreach ($loadings as $loading) {
             Loading::create([
-                'port' => 'N/A',
+                'port_id' => PortCodes::where('port_city', $loading['place'])->select('id')->get()[0]->id,
                 'place' => $loading['place'],
                 'country' => $loading['country'],
                 'cluster' => $loading['cluster'],

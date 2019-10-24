@@ -27,8 +27,6 @@ class CreateBlsTable extends Migration
             $table->integer('number_of_40');
             $table->string('container_20');
             $table->string('container_40');
-            $table->string('country');
-            $table->string('city');
             $table->foreign('port_id')->references('id')->on('port_codes');
             $table->foreign('vesselle_id')->references('id')->on('vesselles');
             $table->timestamps();
