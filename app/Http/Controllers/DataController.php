@@ -19,7 +19,6 @@ class DataController extends Controller
      */
     public function index()
     {
-        var_export(PortCodes::where('port_city', 'ADDIS ABEBA')->select('id')->get()[0]->id);
         return view('gainde.index');
     }
 
@@ -38,7 +37,7 @@ class DataController extends Controller
         // Get file from Storage
         $fileToRead = Storage::get($file);
         $fileContent = json_decode($fileToRead, true);
-
+        
         foreach ($fileContent as $bls) {
             // highlight_string(json_encode($bls, JSON_PRETTY_PRINT));
 
@@ -60,12 +59,14 @@ class DataController extends Controller
 
                     $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
 
-                    $found = Bl::find(['bl_number' => $blCode]) ? true : false;
+                    echo $found = empty(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
+                    
+                    // dd(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
 
-                    if(!$found) {
-                        Bl::insert([
+                    if($found) {
+                        Bl::create([
                             'bl_number' => $blCode,
-                            'arrival_date' => $bls['bateau']['manifDateArrivee'],
+                            'arrival_date' => date('Y-m-d', strtotime($bls['bateau']['manifDateArrivee'])),
                             'cargo_type' => $bltype,
                             'shipper' => $bls['nom_exp'],
                             'order' => $bls['destinaire'],
@@ -74,6 +75,8 @@ class DataController extends Controller
                             'number_of_40' => $fourty_feets_number,
                             'container_20' => $twenty_feets_code,
                             'container_40' => $fourty_feets_code,
+                            'port_id' => PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0]->id,
+                            'vesselle_id' => Vesselle::where('name', trim($bls['bateau']['manifMoyenTransport']))->select('id')->get()[0]->id,
                         ]);
                     } else {
                         Bl::where('bl_number', $blCode)->update([
@@ -89,7 +92,7 @@ class DataController extends Controller
             }
         }
 
-        return view('gainde.index');
+        return redirect()->back();
     }
 
     /**

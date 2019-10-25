@@ -22,7 +22,7 @@ class CreateBlsTable extends Migration
             $table->string('cargo_type');
             $table->string('shipper');
             $table->string('order');
-            $table->string('commodity');
+            $table->text('commodity');
             $table->integer('number_of_20');
             $table->integer('number_of_40');
             $table->string('container_20');
