@@ -37,6 +37,7 @@ Route::group(['prefix' => 'vessels', 'middleware' => 'auth'], function () {
 
 Route::group(['prefix' => 'bls', 'middleware' => 'auth'], function () {
     Route::get('/', 'BlController@index')->name('bls');
+    Route::get('/details/{id}', 'BlController@detail')->name('bl-detail');
 
 });
 
@@ -53,5 +54,6 @@ Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
 
 Route::group(['prefix' => 'export', 'middleware' => 'auth'], function() {
     Route::get('/excel', 'ExportController@exportUsers');
+    Route::get('/bls/excel', 'ExportController@exportBls');
 });
 

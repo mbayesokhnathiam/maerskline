@@ -36,6 +36,6 @@ class HomeController extends Controller
             'ships' => $totalShips,
             'vessels' => $totalVessels,
             'bls' => $totalBls
-        ], , ['user' => $user]);
+        ], ['user' => $user]);
     }
 }

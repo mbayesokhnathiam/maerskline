@@ -20,6 +20,17 @@ class BlController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function detail($id)
+    {
+        $bl = Bl::find($id);
+        return view('bl.detail', ['bl' => $bl]);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

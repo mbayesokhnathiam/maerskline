@@ -45,7 +45,7 @@ class DataController extends Controller
             if (strtoupper($bls['pays_dest']) === 'SN' || strtoupper($bls['pays_dest']) === 'ML') {
 
                 // Check if the bl has containers
-                if(!empty($bls['conteneurs'])) {
+                if(count($bls['conteneurs']) != 0) {
 
                     $blCode = $this->isAplha($this->getContainerLastChar($bls['num_bl'])) ? $this->getContainerWithoutLastChar($bls['num_bl']) : $bls['num_bl'];
 

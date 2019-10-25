@@ -6,7 +6,11 @@
         <form action="/gainde" enctype="multipart/form-data" id="form-upload" method="POST">
             @csrf
             <input accept="text/plain" class="d-none" id="gainde-file" name="gainde_file" required type="file">
-            <button class="btn bg-maersk-primary py-2 rounded-0 shadow text-white font-weight-bold" id="btn-upload">Impoter de Gainde <i class="fas fa-download"></i></button>
+            <button class="btn bg-maersk-primary py-2 rounded-0 shadow text-white font-weight-bold" id="btn-upload">
+                <span class="d-none spinner-border spinner-border-sm" role="status" aria-hidden="true" id="loading-spinner"></span>
+                <span id="loading-text">Importer de Gainde</span>
+                <i class="fas fa-download"></i>
+            </button>
         </form>
     </div>
 
@@ -39,7 +43,7 @@
             <div class="align-items-center bg-white d-flex flex-column justify-content-center px-3 py-4 shadow">
                 <span class="h5 font-weight-bold">Bordereaux de Livraison (BL)</span>
 
-                <i class="fas fa-file-invoice  fa-5x pt-3 text-black-50"></i>
+                <i class="fas fa-file-alt  fa-5x pt-3 text-black-50"></i>
 
                 <span class="font-weight-lighter h4 my-3">{{ $bls }}</span>
 

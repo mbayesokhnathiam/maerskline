@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\BlsExport;
 use App\Exports\UsersExport;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Excel;
-use Illuminate\Http\Request;
 
 class ExportController extends Controller
 {
@@ -19,5 +21,10 @@ class ExportController extends Controller
     {
         // return $this->excel->download(new UsersExport, 'users.xlsx');
         return $excel->download(new UsersExport, 'users.xlsx');
+    }
+
+    public function exportBls(Excel $excel)
+    {
+        return $excel->download(new BlsExport, 'delivery_slip_' . Str::slug(Carbon::now()) . '.xlsx');
     }
 }

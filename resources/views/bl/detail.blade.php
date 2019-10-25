@@ -1,25 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+<div class="container">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="d-flex w-75 align-items-start justify-content-between mb-2 px-3 py-3">
-                        <h1>Delivery Slips</h1>
-                        <a href="{{ url('/export/bls/excel') }}" class="btn btn-outline-success font-weight-bold rounded-0">
-                            Exporter
-                            <i class="fas fa-file-excel ml-2"></i>
+                        <a href="{{ url('/bls') }}" class="btn btn-link font-weight-bold rounded-0">
+                            <i class="fas fa-chevron-left ml-2"></i>
+                            Go back
                         </a>
+                        <h1>Nᵒ {{ $bl->bl_number }}</h1>
                     </div>
                 </div>
                 <div class="mt-3 w-100">
-                    @foreach ($bls as $bl)
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="bg-white shadow-sm d-flex flex-column w-75 align-items-start justify-content-between mb-2 px-3 py-3">
                             <div class="pl-2">
-                                <h5 class="font-weight-bolder ">Nᵒ {{ $bl->bl_number }}</h5>
-
                                 <div class="d-flex justify-content-between py-3">
                                     <div class="mr-5">
                                         <h5 class="font-weight-bold">Cargo Type</h5>
@@ -37,15 +34,33 @@
                                 </div>
 
                             </div>
-                            <div class="d-flex justify-content-between pl-2 rounded-0">
-                                <a class="btn bg-maersk-primary font-weight-bold p-2 px-4 h5 shadow-sm text-white rounded-0" href="{{ url('/bls/details/' . $bl->id) }}">Details</a>
-                            </div>
                         </div>
                     </div>
-                    @endforeach
                 </div>
-                <div class="d-flex align-items-center justify-content-center w-100">
-                    {{ $bls->links() }}
+
+            </div>
+            <div class="col-12 bg-white shadow-sm">
+                <div class="d-flex flex-column w-100 align-items-start justify-content-between mb-2 px-3 py-3">
+                    <div class="pl-2">
+                        <div class="d-flex justify-content-between py-3">
+                            <div class="mr-5">
+                                <h5 class="font-weight-bold">Arrival Date</h5>
+                                <h5 class="font-weight-bold">Number of 20</h5>
+                                <h5 class="font-weight-bold">Number of 40</h5>
+                                <h5 class="font-weight-bold">Containers of 20</h5>
+                                <h5 class="font-weight-bold">Containers of 40</h5>
+                            </div>
+
+                            <div>
+                                <h5>{{ $bl->arrival_date }}</h5>
+                                <h5>{{ $bl->number_of_20 }}</h5>
+                                <h5>{{ $bl->number_of_40 }}</h5>
+                                <h5>{{ $bl->container_20 == 0 ? 0 : $bl->container_20 }}</h5>
+                                <h5>{{ $bl->container_40 == '' ? '' : $bl->container_40 }}</h5>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
