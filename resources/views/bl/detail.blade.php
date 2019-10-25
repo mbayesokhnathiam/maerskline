@@ -49,6 +49,10 @@
                                 <h5 class="font-weight-bold">Number of 40</h5>
                                 <h5 class="font-weight-bold">Containers of 20</h5>
                                 <h5 class="font-weight-bold">Containers of 40</h5>
+                                <h5 class="font-weight-bold">City</h5>
+                                <h5 class="font-weight-bold">Country</h5>
+                                <h5 class="font-weight-bold">Cluster</h5>
+                                <h5 class="font-weight-bold">Route</h5>
                             </div>
 
                             <div>

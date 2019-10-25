@@ -32,7 +32,7 @@
                                 <td class="align-middle">{{ $bl->cargo_type }}</td>
                                 <td class="align-middle">{{ $bl->order }}</td>
                                 <td class="align-middle">{{ $bl->shipper }}</td>
-                                <td class="align-middle">{{ $bl->commodity }}</td>
+                                <td class="align-middle">{{ Str::limit($bl->commodity, 48) }}</td>
                                 <td class="align-middle"><a class="btn bg-maersk-primary font-weight-bold p-2 px-4 h5 shadow-sm text-white rounded-0" href="{{ url('/bls/details/' . $bl->id) }}">Details</a></td>
                             </tr>
                         @endforeach
