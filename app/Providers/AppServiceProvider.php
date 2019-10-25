@@ -28,9 +28,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $shipping_lines = Shipping::paginate(6);
+        $shipping_lines = Shipping::paginate(6);
 
-        // View::share('shipping_lines', $shipping_lines);
+        View::share('shipping_lines', $shipping_lines);
 
         Schema::defaultStringLength(191);
 
