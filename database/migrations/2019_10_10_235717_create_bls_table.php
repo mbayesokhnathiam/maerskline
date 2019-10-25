@@ -25,8 +25,8 @@ class CreateBlsTable extends Migration
             $table->text('commodity');
             $table->integer('number_of_20');
             $table->integer('number_of_40');
-            $table->string('container_20');
-            $table->string('container_40');
+            $table->text('container_20');
+            $table->text('container_40');
             $table->foreign('port_id')->references('id')->on('port_codes');
             $table->foreign('vesselle_id')->references('id')->on('vesselles');
             $table->timestamps();

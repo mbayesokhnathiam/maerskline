@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bl;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -14,7 +15,8 @@ class BlController extends Controller
      */
     public function index()
     {
-        return view('bl.index');
+        $bls = Bl::paginate(6);
+        return view('bl.index', ['bls' => $bls]);
     }
 
     /**

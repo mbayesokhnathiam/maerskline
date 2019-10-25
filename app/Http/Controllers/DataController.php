@@ -37,7 +37,7 @@ class DataController extends Controller
         // Get file from Storage
         $fileToRead = Storage::get($file);
         $fileContent = json_decode($fileToRead, true);
-        
+
         foreach ($fileContent as $bls) {
             // highlight_string(json_encode($bls, JSON_PRETTY_PRINT));
 
@@ -59,9 +59,26 @@ class DataController extends Controller
 
                     $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
 
-                    echo $found = empty(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
-                    
+                    $found = empty(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
+
                     // dd(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
+
+                    if(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0])) {
+                        PortCodes::create([
+                            'port_code' => trim($bls['bateau']['manifMoyenTransport']),
+                            'port_city' => 'DEFAULT'
+                        ]);
+
+                        // dd(trim($bls['lieu_embarq']));
+                    }
+
+                    if(empty(Vesselle::where('name', trim($bls['bateau']['manifMoyenTransport']))->get()[0])) {
+                        Vesselle::create([
+                            'name' => trim($bls['bateau']['manifMoyenTransport']),
+                            'shipping_id' => 1
+                        ]);
+                        // dd(trim($bls['bateau']['manifMoyenTransport']));
+                    }
 
                     if($found) {
                         Bl::create([
@@ -80,10 +97,10 @@ class DataController extends Controller
                         ]);
                     } else {
                         Bl::where('bl_number', $blCode)->update([
-                            'number_of_20' => $twenty_feets_number,
-                            'number_of_40' => $fourty_feets_number,
-                            'container_20' => $twenty_feets_code,
-                            'container_40' => $fourty_feets_code,
+                            'number_of_20' => Bl::where('bl_number', $blCode)->select('number_of_20')->get()[0]->number_of_20 + $twenty_feets_number,
+                            'number_of_40' => Bl::where('bl_number', $blCode)->select('number_of_40')->get()[0]->number_of_40 + $fourty_feets_number,
+                            'container_20' => Bl::where('bl_number', $blCode)->select('container_20')->get()[0]->container_20 . $twenty_feets_code,
+                            'container_40' => Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_40 . $fourty_feets_code,
                         ]);
                     }
 
