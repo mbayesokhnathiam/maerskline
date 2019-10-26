@@ -1,4 +1,4 @@
-(function (window, doc) {
+(function (window, doc, $) {
 
     window.addEventListener('DOMContentLoaded', (event) => {
 
@@ -34,6 +34,16 @@
                 doc.getElementById('user-add-modal').submit();
             });
         }
+        $('#daterangepicker').val('');
+        $('#daterangepicker').daterangepicker({
+            opens: 'left'
+        });
+        $('#daterangepicker').on('apply.daterangepicker', function(ev, picker) {
+            console.log(picker.startDate.format('YYYY-MM-DD'));
+            console.log(picker.endDate.format('YYYY-MM-DD'));
+            doc.getElementById('start-date').value = picker.startDate.format('YYYY-MM-DD');
+            doc.getElementById('end-date').value = picker.endDate.format('YYYY-MM-DD');
+        });
     });
 
-})(window, document);
+})(window, document, jQuery);

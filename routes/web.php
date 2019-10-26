@@ -36,9 +36,9 @@ Route::group(['prefix' => 'vessels', 'middleware' => 'auth'], function () {
 });
 
 Route::group(['prefix' => 'bls', 'middleware' => 'auth'], function () {
-    Route::get('/', 'BlController@index')->name('bls');
+    Route::get('/{startDate?}/{endDate?}', 'BlController@index')->name('bls');
     Route::get('/details/{id}', 'BlController@detail')->name('bl-detail');
-
+    // Route::get('/{startDate}/{endDate}', 'BlController@search');
 });
 
 Route::group(['prefix' => 'gainde', 'middleware' => 'auth'], function () {

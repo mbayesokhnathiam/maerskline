@@ -10,6 +10,12 @@
                                 Exporter
                                 <i class="fas fa-file-excel ml-2"></i>
                             </a>
+                            <form action="{{ url('/bls') }}" class="form-horizontal d-flex justify-content-between" id="form-date" method="GET">
+                                <input class="form-control d-inline-block rounded-0 w-75" type="text" id="daterangepicker">
+                                <button class="btn bg-maersk-primary text-white rounded-0">Filtrer</button>
+                                <input class="d-none" name="startdate" id="start-date">
+                                <input class="d-none" name="endate" id="end-date">
+                            </form>
                         </div>
                     </div>
             <div class="col-md-12 overflow-auto">
@@ -20,7 +26,7 @@
                             <th>Cargo Type</th>
                             <th>Owner</th>
                             <th>Shipper</th>
-                            <th>Commodity</th>
+                            <th>Loading place</th>
                             <th></th>
                         </tr>
                     </thead>

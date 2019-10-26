@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Bl;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
 
 class BlController extends Controller
@@ -13,9 +14,14 @@ class BlController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $bls = Bl::paginate(6);
+        $startDate = date('Y-m-d', strtotime($request->get('startdate') ?  $request->get('startdate') : '1970-01-01'));
+        $endDate = date('Y-m-d', strtotime($request->get('endate') ?  $request->get('endate') : Carbon::now()));
+
+        // dd($startDate);
+
+        $bls = !$startDate ? Bl::paginate(6) : Bl::whereBetween('arrival_date', [$startDate, $endDate])->paginate(6);
         return view('bl.index', ['bls' => $bls]);
     }
 
@@ -28,6 +34,24 @@ class BlController extends Controller
     {
         $bl = Bl::find($id);
         return view('bl.detail', ['bl' => $bl]);
+    }
+
+    /**
+     * Display a listing of the resource between two date.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function search(Request $request)
+    {
+        $startDate = date('Y-m-d H:m:s', strtotime($request->get('startdate')));
+        $endDate = date('Y-m-d H:m:s', strtotime($request->get('endate')));
+
+        // dd(date('Y-m-d H:m:s', strtotime($request->get('startdate'))));
+        $bls = Bl::whereBetween('arrival_date', [$startDate, $endDate])->paginate(6);
+
+        // dd($bls);
+
+        return view('bl.index', ['bls' => $bls]);
     }
 
     /**

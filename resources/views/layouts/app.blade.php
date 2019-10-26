@@ -10,13 +10,14 @@
     <title>{{ __('Maersk Line est une société danoise de transport international de conteneurs et la plus grande filiale opérationnelle du groupe Maersk, un conglomérat danois.') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{--  <script src="{{ asset('js/app.js') }}" defer></script>  --}}
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css') }}">
 
     <!-- Styles -->
+    <link href="{{ asset('css/daterangepicker.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
@@ -78,6 +79,9 @@
         </main>
     </div>
 
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/moment.min.js') }}"></script>
+    <script src="{{ asset('js/daterangepicker.min.js') }}"></script>
     <script src="{{ asset('js/datascript.js') }}"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@ use App\PortCodes;
 use App\Shipping;
 use App\Vesselle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
 
 class DataController extends Controller
@@ -83,7 +84,7 @@ class DataController extends Controller
                     if($found) {
                         Bl::create([
                             'bl_number' => $blCode,
-                            'arrival_date' => date('Y-m-d', strtotime($bls['bateau']['manifDateArrivee'])),
+                            'arrival_date' => Carbon::parse($bls['bateau']['manifDateArrivee']),
                             'cargo_type' => $bltype,
                             'shipper' => $bls['nom_exp'],
                             'order' => $bls['destinaire'],
