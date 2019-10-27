@@ -82,20 +82,22 @@ class DataController extends Controller
                     }
 
                     if($found) {
-                        Bl::create([
-                            'bl_number' => $blCode,
-                            'arrival_date' => Carbon::parse($bls['bateau']['manifDateArrivee']),
-                            'cargo_type' => $bltype,
-                            'shipper' => $bls['nom_exp'],
-                            'order' => $bls['destinaire'],
-                            'commodity' => $bls['commodity'],
-                            'number_of_20' => $twenty_feets_number,
-                            'number_of_40' => $fourty_feets_number,
-                            'container_20' => $twenty_feets_code,
-                            'container_40' => $fourty_feets_code,
-                            'port_id' => PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0]->id,
-                            'vesselle_id' => Vesselle::where('name', trim($bls['bateau']['manifMoyenTransport']))->select('id')->get()[0]->id,
-                        ]);
+                        if ($twenty_feets_number == 0 && $fourty_feets_number == 0) {
+                            Bl::create([
+                                'bl_number' => $blCode,
+                                'arrival_date' => Carbon::parse($bls['bateau']['manifDateArrivee']),
+                                'cargo_type' => $bltype,
+                                'shipper' => $bls['nom_exp'],
+                                'order' => $bls['destinaire'],
+                                'commodity' => $bls['commodity'],
+                                'number_of_20' => $twenty_feets_number,
+                                'number_of_40' => $fourty_feets_number,
+                                'container_20' => $twenty_feets_code,
+                                'container_40' => $fourty_feets_code,
+                                'port_id' => PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0]->id,
+                                'vesselle_id' => Vesselle::where('name', trim($bls['bateau']['manifMoyenTransport']))->select('id')->get()[0]->id,
+                            ]);
+                        }
                     } else {
                         Bl::where('bl_number', $blCode)->update([
                             'number_of_20' => Bl::where('bl_number', $blCode)->select('number_of_20')->get()[0]->number_of_20 + $twenty_feets_number,
@@ -192,7 +194,7 @@ class DataController extends Controller
         $c_40 = "";
 
         foreach ($blContainers as $container) {
-            if (substr($container[2], 0, 2) !== '40') {
+            if (substr($container[2], 0, 2) === '40' || substr($container[2], 0, 2) === '45') {
                 $c_40 .= trim($container[0]) . ' | ';
             }
         }

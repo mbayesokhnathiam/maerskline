@@ -12,17 +12,14 @@ use Request;
 class ExportController extends Controller
 {
     private $excel;
-    private $request;
 
-    public function __construct(Excel $excel, Request $request)
+    public function __construct(Excel $excel)
     {
         $this->excel = $excel;
-        $this->request = $request;
     }
 
     public function exportUsers(Excel $excel)
     {
-        // return $this->excel->download(new UsersExport, 'users.xlsx');
         return $excel->download(new UsersExport, 'users.xlsx');
     }
 
@@ -31,9 +28,12 @@ class ExportController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function exportBls(Excel $excel, Request $request)
+    public function exportBls(Excel $excel, $startDate = '', $endDate = '')
     {
-        // dd($request);
+        if (!empty($startDate) && !empty($endDate)) {
+            return (new BlsExport($startDate, $endDate))->download('delivery_slip_' . Str::slug(Carbon::now()) . '.xlsx');
+        }
+
         return $excel->download(new BlsExport, 'delivery_slip_' . Str::slug(Carbon::now()) . '.xlsx');
     }
 }

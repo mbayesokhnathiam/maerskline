@@ -93,7 +93,9 @@ class ShippingController extends Controller
 
         $shippingLine->save();
 
-        return view('shipping.index', ['updateStatus' => 1]);
+        $request->session()->flash('updateStatus', 1);
+
+        return redirect()->route('shipping-lines');
     }
 
     /**

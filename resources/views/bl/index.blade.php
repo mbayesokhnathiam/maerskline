@@ -6,7 +6,7 @@
             <div class="d-flex justify-content-center align-items-center w-100">
                 <div class="d-flex w-100  align-items-start justify-content-between mb-2 px-3 py-3">
                     <h1>Delivery Slips</h1>
-                    <a href="{{ url('/export/bls/excel' . '/' . app('request')->input('startdate'). '/' . app('request')->input('endate') ) }}" class="btn btn-outline-success font-weight-bold rounded-0">
+                    <a href="{{ url('/export/bls/excel', ['startdate' => app('request')->input('startdate'),'endate' => app('request')->input('endate')] ) }}" class="btn btn-outline-success font-weight-bold rounded-0">
                         Exporter
                         <i class="fas fa-file-excel ml-2"></i>
                     </a>

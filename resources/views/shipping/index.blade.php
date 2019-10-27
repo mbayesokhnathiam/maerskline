@@ -15,7 +15,7 @@
                     <div class="alert-info p-4">Shipping Line Deleted</div>
                 @endif
 
-                @if ($updateStatus ?? '' == 1)
+                @if (Session::has('updateStatus') and Session::get('updateStatus') == 1)
                     <div class="alert-info p-4">Shipping Line Updated</div>
                 @endif
 
