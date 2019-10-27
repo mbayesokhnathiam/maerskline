@@ -83,5 +83,6 @@
     <script src="{{ asset('js/moment.min.js') }}"></script>
     <script src="{{ asset('js/daterangepicker.min.js') }}"></script>
     <script src="{{ asset('js/datascript.js') }}"></script>
+    <script src="{{ asset('js/bl-script.js') }}"></script>
 </body>
 </html>

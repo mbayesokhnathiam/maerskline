@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ __('Maersk Line est une société danoise de transport international de conteneurs et la plus grande filiale opérationnelle du groupe Maersk, un conglomérat danois.') }}</title>
+        <title>{{ __('MCT Maerskline') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
