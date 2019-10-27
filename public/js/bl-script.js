@@ -1,16 +1,16 @@
 $(document).ready(() => {
-    $.existUrlParam = function(name){
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 
-        console.table(results);
-        return results[1] || 0;
+    $.getPathOf = (name) => {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return results;
     }
 
-    $.getUrlParam = function(name){
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    $.existUrlParam = (name) => {
+        return $.getPathOf(name)[1] || 0;
+    }
 
-        console.table(results);
-        return results[0] || 0;
+    $.getUrlParam = (name) => {
+        return $.getPathOf(name)[0] || 0;
     }
 
     if ($.existUrlParam('startdate') !== 0) {

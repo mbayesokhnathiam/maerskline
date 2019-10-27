@@ -39,28 +39,36 @@
                 </div>
 
             </div>
-            <div class="col-12 bg-white shadow-sm">
+            <div class="col-12 shadow-sm">
                 <div class="d-flex flex-column w-100 align-items-start justify-content-between mb-2 px-3 py-3">
                     <div class="pl-2">
                         <div class="d-flex justify-content-between py-3">
                             <div class="mr-5">
-                                <h5 class="font-weight-bold">Arrival Date</h5>
-                                <h5 class="font-weight-bold">Number of 20</h5>
-                                <h5 class="font-weight-bold">Number of 40</h5>
-                                <h5 class="font-weight-bold">Containers of 20</h5>
-                                <h5 class="font-weight-bold">Containers of 40</h5>
-                                <h5 class="font-weight-bold">City</h5>
-                                <h5 class="font-weight-bold">Country</h5>
-                                <h5 class="font-weight-bold">Cluster</h5>
-                                <h5 class="font-weight-bold">Route</h5>
-                            </div>
 
-                            <div>
-                                <h5>{{ $bl->arrival_date }}</h5>
-                                <h5>{{ $bl->number_of_20 }}</h5>
-                                <h5>{{ $bl->number_of_40 }}</h5>
-                                <h5>{{ $bl->container_20 == 0 ? 0 : $bl->container_20 }}</h5>
-                                <h5>{{ $bl->container_40 == '' ? '' : $bl->container_40 }}</h5>
+                                <table class="table w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Arrival Date</th>
+                                            <th>Number of 20</th>
+                                            <th>Number of 40</th>
+                                            <th>Containers of 20</th>
+                                            <th>Containers of 40</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                            <th>Cluster</th>
+                                            <th>Route</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ $bl->arrival_date }}</td>
+                                            <td>{{ $bl->number_of_20 }}</td>
+                                            <td>{{ $bl->number_of_40 }}</td>
+                                            <td>{{ $bl->container_20 == 0 ? 0 : $bl->container_20 }}</td>
+                                            <td>{{ $bl->container_40 == '' ? '' : $bl->container_40 }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 

@@ -15,6 +15,10 @@
                     <div class="alert-info p-4">Shipping Line Deleted</div>
                 @endif
 
+                @if ($updateStatus ?? '' == 1)
+                    <div class="alert-info p-4">Shipping Line Updated</div>
+                @endif
+
                 <a class="btn btn-sm btn-success shadow-sm rounded-0" data-toggle="modal"
                     data-target="#add-shipping-line" href="#">Ajouter une shipping line</a>
             </div>
@@ -23,7 +27,7 @@
                 <div class="bg-white shadow-sm d-flex w-100 align-items-center justify-content-between px-3 py-3 mb-2">
                     <h5>{{ $ship_line->name }}</h3>
                     <div class="d-flex justify-content-between w-17 rounded-0">
-                        <a class="btn btn-sm bg-maersk-primary text-white rounded-0" href="#">Modifier</a>
+                        <a class="btn btn-sm bg-maersk-primary text-white rounded-0" href="{{ url('/shipping/edit/' . $ship_line->id) }}">Modifier</a>
                         <a class="btn btn-sm btn-danger rounded-0" href="{{ url('/shipping/remove/' . $ship_line->id) }}">Supprimer</a>
                     </div>
                 </div>
@@ -51,7 +55,7 @@
                     <div class="form-row flex-column">
                         <label for="shippingLine">Shipping Line</label>
                         @csrf
-                        <input id="shipping-line" name="shippingLine" placeholder="Sample Shipping Line ..." required type="text">
+                        <input id="shipping-line" name="shippingLine" placeholder="Shipping Line name ..." required type="text">
                     </div>
                 </form>
             </div>

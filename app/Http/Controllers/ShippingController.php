@@ -51,6 +51,19 @@ class ShippingController extends Controller
     }
 
     /**
+     * Update confirmation of the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function confirmEdit($id)
+    {
+        $shippingLine = Shipping::find($id);
+
+        return view('shipping.edit', ['shippingLine' => $shippingLine]);
+    }
+
+    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
@@ -70,7 +83,17 @@ class ShippingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'shippingLine' => 'required',
+        ]);
+
+        $shippingLine = Shipping::find($id);
+
+        $shippingLine->name = $request->input('shippingLine');
+
+        $shippingLine->save();
+
+        return view('shipping.index', ['updateStatus' => 1]);
     }
 
     /**
@@ -81,9 +104,7 @@ class ShippingController extends Controller
      */
     public function destroy($id)
     {
-        Shipping::where('id', '=', $id)->delete();
-
-        return view('shipping.index', ['deleteStatus' => 1]);
+        //
     }
 
     /**

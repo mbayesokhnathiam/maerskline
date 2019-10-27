@@ -154,7 +154,7 @@ class DataController extends Controller
         $n_40 = 0;
 
         foreach ($blContainers as $container) {
-            if (substr($container[2], 0, 2) !== '40') {
+            if (substr($container[2], 0, 2) === '40' || substr($container[2], 0, 2) === '45') {
                 $n_40++;
             }
         }
