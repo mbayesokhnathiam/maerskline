@@ -38,7 +38,7 @@ class AppServiceProvider extends ServiceProvider
         if (User::count() == 0) {
             User::create([
                 'name' => 'Maersk Line',
-                'email' => 'admimn@safmarine.com',
+                'email' => 'admin@safmarine.com',
                 'email_verified_at' => now(),
                 'password' => Hash::make('maerskline'),
                 'remember_token' => Str::random(10),
