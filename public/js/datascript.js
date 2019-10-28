@@ -42,7 +42,6 @@
         $('#daterangepicker').on('apply.daterangepicker', function(ev, picker) {
             doc.getElementById('start-date').value = picker.startDate.format('YYYY-MM-DD');
             doc.getElementById('end-date').value = picker.endDate.format('YYYY-MM-DD');
-            // doc.getElementById('daterangepicker').value =
         });
     });
 

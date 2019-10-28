@@ -16,6 +16,8 @@ class BlController extends Controller
      */
     public function index(Request $request)
     {
+        // dd(Bl::where('bl_number', '=', 'S316448792')->select('container_40')->get());
+
         $startDate = date('Y-m-d', strtotime($request->get('startdate') ?  $request->get('startdate') : '1970-01-01'));
         $endDate = date('Y-m-d', strtotime($request->get('endate') ?  $request->get('endate') : Carbon::now()));
 

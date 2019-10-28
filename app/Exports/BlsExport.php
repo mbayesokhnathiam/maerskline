@@ -3,6 +3,7 @@
 namespace App\Exports;
 
 use App\Bl;
+use DB;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -17,21 +18,26 @@ class BlsExport implements FromCollection, WithHeadings
     public function headings():array
     {
         return [
-            'N Bl',
-            'Arrival Date',
-            'Cargo Type',
-            'Shipper',
-            'Owner',
-            'Commodity',
-            '20 feets',
-            '40 feets',
+            'IMP/EXP',
+            'VESSEL NAME',
+            'SHIPPING LINE',
+            'POR PLACE', // City
+            'POR COUNTRY',
+            'POR CLUSTER',
+            'ROUTE',
+            'POD PLACE', // Ville Des
+            'POD COUNTRY',
+            'ARRIVAL MONTH',
+            'ARRIVAL YEAR',
+            'CARGO TYPE',
+            'SHIPPER',
+            'CONSIGNEE',
+            'COMMODITY',
+            'No OF 20',
+            'No OF 40',
+            'BL',
             '20 feets Containers',
             '40 feets Containers',
-            'Port Code',
-            'City',
-            'Country',
-            'Cluster',
-            'Route'
         ];
     }
 
@@ -47,16 +53,15 @@ class BlsExport implements FromCollection, WithHeadings
 
         return Bl::whereBetween('arrival_date', [$this->startDate, $this->endDate])
                     ->join('port_codes', 'bls.port_id', '=', 'port_codes.id')
-                    ->leftjoin('loadings', 'port_codes.id', 'loadings.port_id')
+                    ->leftjoin('loadings', 'port_codes.id', '=', 'loadings.port_id')
+                    ->join('vesselles', 'bls.vesselle_id', '=', 'vesselles.id')
+                    ->join('shippings', 'vesselles.shipping_id', '=', 'shippings.id')
                     ->select(
-                        'bls.bl_number', 'bls.arrival_date',
-                        'bls.cargo_type', 'bls.shipper',
-                        'bls.order', 'bls.commodity',
-                        'number_of_20', 'number_of_40',
-                        'container_20', 'container_40',
-                        'port_codes.port_code',
-                        'port_codes.port_city', 'loadings.country',
-                        'loadings.cluster', 'loadings.route',)
+                        'bls.imp_exp', 'vesselles.name',
+                        'shippings.name',
+                        )
+
                     ->get();
+
     }
 }

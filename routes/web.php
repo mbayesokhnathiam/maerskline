@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -60,3 +62,7 @@ Route::group(['prefix' => 'export', 'middleware' => 'auth'], function() {
     Route::get('/bls/excel/{startDate?}/{endDate?}', 'ExportController@exportBls');
 });
 
+Route::group(['prefix' => 'ports', 'middleware' => 'auth'], function () {
+    Route::get('/', 'PortCodeController@index');
+    Route::post('/', 'PortCodeController@search');
+});

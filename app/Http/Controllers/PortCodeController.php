@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Loading;
 use Illuminate\Http\Request;
 
 class PortCodeController extends Controller
@@ -13,7 +14,10 @@ class PortCodeController extends Controller
      */
     public function index()
     {
-        //
+        $port = Loading::rightjoin('port_codes', 'port_codes.id', 'loadings.port_id')
+                        ->paginate(6);
+
+        return view('port.index', ['ports' => $port]);
     }
 
     /**

@@ -23,7 +23,10 @@ class Bl extends Model
         'number_of_20',
         'number_of_40',
         'container_20',
-        'container_40'
+        'container_40',
+        'imp_exp',
+        'pod_place',
+        'pod_country',
     ];
 
     public function loading()

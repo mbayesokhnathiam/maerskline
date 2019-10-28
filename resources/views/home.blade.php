@@ -23,7 +23,7 @@
 
                 <span class="font-weight-lighter h4 my-3">{{ $ships }}</span>
 
-                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="/shipping">Voir plus</a>
+                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="{{ url('/shipping') }}">Voir plus</a>
             </div>
         </div>
 
@@ -35,7 +35,7 @@
 
                 <span class="font-weight-lighter h4 my-3">{{ $vessels }}</span>
 
-                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="/vessels">Voir plus</a>
+                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="{{ url('/vessels') }}">Voir plus</a>
             </div>
         </div>
 
@@ -47,7 +47,19 @@
 
                 <span class="font-weight-lighter h4 my-3">{{ $bls }}</span>
 
-                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="/bls">Voir plus</a>
+                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="{{ url('/bls') }}">Voir plus</a>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-12 my-2 my-sm-0 p-2 text-center">
+            <div class="align-items-center bg-white d-flex flex-column justify-content-center px-3 py-4 shadow">
+                <span class="h5 font-weight-bold">Ports</span>
+
+                <i class="fas fa-globe-africa fa-5x pt-3 text-black-50"></i>
+
+                <span class="font-weight-lighter h4 my-3">{{ $ports }}</span>
+
+                <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white shadow-sm text-uppercase" href="{{ url('/ports') }}">Voir plus</a>
             </div>
         </div>
 
