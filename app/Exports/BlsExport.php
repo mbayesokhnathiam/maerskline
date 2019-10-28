@@ -55,10 +55,18 @@ class BlsExport implements FromCollection, WithHeadings
                     ->join('port_codes', 'bls.port_id', '=', 'port_codes.id')
                     ->leftjoin('loadings', 'port_codes.id', '=', 'loadings.port_id')
                     ->join('vesselles', 'bls.vesselle_id', '=', 'vesselles.id')
-                    ->join('shippings', 'vesselles.shipping_id', '=', 'shippings.id')
+                    ->rightjoin('shippings', 'vesselles.shipping_id', '=', 'shippings.id')
                     ->select(
-                        'bls.imp_exp', 'vesselles.name',
-                        'shippings.name',
+                        'bls.imp_exp', 'vesselles.name as v_name',
+                        'shippings.name as s_name', 'port_codes.port_city',
+                        'loadings.country', 'loadings.cluster',
+                        'loadings.route', 'bls.pod_place',
+                        'bls.pod_country', DB::raw('MONTH(bls.arrival_date)'),
+                        DB::raw('YEAR(bls.arrival_date)'), 'bls.cargo_type',
+                        'bls.shipper', 'bls.order',
+                        'bls.commodity', 'number_of_20',
+                        'number_of_40', 'bl_number',
+                        'container_20', 'container_40',
                         )
 
                     ->get();
