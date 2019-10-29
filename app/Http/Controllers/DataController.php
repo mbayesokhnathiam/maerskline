@@ -66,9 +66,12 @@ class DataController extends Controller
 
                     if($found) {
                         if ($fourty_feets_number != 0 ||  $twenty_feets_number != 0) {
+                            echo trim($bls['lieu_embarq']);
+                            // dd(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0]));
+
                             if(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0])) {
                                 PortCodes::create([
-                                    'port_code' => trim($bls['bateau']['manifMoyenTransport']),
+                                    'port_code' => trim($bls['lieu_embarq']),
                                     'port_city' => 'DEFAULT'
                                 ]);
                             }
