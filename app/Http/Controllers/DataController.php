@@ -40,34 +40,34 @@ class DataController extends Controller
         $fileContent = json_decode($fileToRead, true);
 
         foreach ($fileContent as $bls) {
-            // highlight_string(json_encode($bls, JSON_PRETTY_PRINT));
 
             // Check if the destination is Senegal or Mali
             if (strtoupper($bls['pays_dest']) === 'SN' || strtoupper($bls['pays_dest']) === 'ML') {
 
                 // Check if the bl has containers
                 if(count($bls['conteneurs']) != 0) {
-
-                    $pod_country = strtoupper($bls['pays_dest']) === 'SN' ? 'SENEGAL' : 'MALI';
-
                     $blCode = $this->isAplha($this->getContainerLastChar($bls['num_bl'])) ? $this->getContainerWithoutLastChar($bls['num_bl']) : $bls['num_bl'];
-
-                    $bltype = $this->getBlType($bls['conteneurs'][0]);
-
-                    $twenty_feets_number = $this->get20s($bls['conteneurs']);
-
-                    $fourty_feets_number = $this->get40s($bls['conteneurs']);
-
-                    $twenty_feets_code = $this->get20sContainers($bls['conteneurs']);
-
-                    $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
 
                     $found = empty(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
 
                     if($found) {
+                        $fourty_feets_number = $this->get40s($bls['conteneurs']);
+
+                        $twenty_feets_number = $this->get20s($bls['conteneurs']);
+
                         if ($fourty_feets_number != 0 ||  $twenty_feets_number != 0) {
-                            echo trim($bls['lieu_embarq']);
-                            // dd(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0]));
+
+                            $twenty_feets_code = $this->get20sContainers($bls['conteneurs']);
+
+                            $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
+
+                            $pod_country = strtoupper($bls['pays_dest']) === 'SN' ? 'SENEGAL' : 'MALI';
+
+
+
+                            $bltype = $this->getBlType($bls['conteneurs'][0]);
+
+                            $registration_date = Carbon::now(); // Replace with registration date
 
                             if(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0])) {
                                 PortCodes::create([
@@ -87,6 +87,7 @@ class DataController extends Controller
                                 'imp_exp' => 'IMP',
                                 'bl_number' => $blCode,
                                 'arrival_date' => Carbon::parse($bls['bateau']['manifDateArrivee']),
+                                'registration_date' => $registration_date,
                                 'cargo_type' => $bltype,
                                 'shipper' => $bls['nom_exp'],
                                 'order' => $bls['destinaire'],

@@ -22,7 +22,7 @@
                 $('#loading-spinner').removeClass('d-none')
                 $('#btn-upload').attr('disabled',true)
                 $('#loading-text').text('Importation en cours...')
-                $('#btn-upload i').addClass('d-none')
+                $('#btn-upload i').addClass('d-none');
             }, false);
         }
 

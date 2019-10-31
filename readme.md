@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a49d50cf464341a9a52c6404f7efb378)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nangui/maerskline&amp;utm_campaign=Badge_Grade)
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
