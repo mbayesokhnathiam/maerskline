@@ -38,6 +38,8 @@ Route::group(['prefix' => 'shipping', 'middleware' => 'auth'], function () {
 
 Route::group(['prefix' => 'vessels', 'middleware' => 'auth'], function () {
     Route::get('/', 'VesselController@index')->name('vessels');
+    Route::get('/edit/{id}', 'VesselController@edit')->name('edit-vessel');
+    Route::post('/update/{id}', 'VesselController@update')->name('update-vessel');
 
 });
 
@@ -63,6 +65,8 @@ Route::group(['prefix' => 'export', 'middleware' => 'auth'], function() {
 });
 
 Route::group(['prefix' => 'ports', 'middleware' => 'auth'], function () {
-    Route::get('/', 'PortCodeController@index');
-    Route::post('/', 'PortCodeController@search');
+    Route::get('/', 'PortCodeController@index')->name('port-codes');
+    Route::post('/', 'PortCodeController@search')->name('port-codes');
+    Route::get('/update-loadings-port/{id}', 'PortCodeController@upgradePorts')->name('upgrade-loadings-ports');
+    Route::post('/update-loadings-port/upgradePorts/{id}', 'PortCodeController@upgradePort')->name('upgrade-loadings-port');
 });

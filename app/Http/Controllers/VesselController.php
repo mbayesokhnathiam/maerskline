@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Shipping;
 use App\Vesselle;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,9 @@ class VesselController extends Controller
      */
     public function index()
     {
-        $vessels = Vesselle::with('shipping')->paginate(5);
+        $vessels = Vesselle::with('shipping')
+                            ->where('shipping_id', 1)
+                            ->paginate(5);
         return view('vessel.index', ['vessels' => $vessels]);
     }
 
@@ -58,7 +61,14 @@ class VesselController extends Controller
      */
     public function edit($id)
     {
-        //
+        $vessel = Vesselle::find($id);
+
+        $shippingLines = Shipping::select('id', 'name')
+                                    ->where('id', '!=', 1)
+                                    ->get();
+
+        return view('vessel.edit', ['vessel' => $vessel,
+                                    'shippingLines' => $shippingLines,]);
     }
 
     /**
@@ -70,7 +80,12 @@ class VesselController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Vesselle::where('id', $id)
+                ->update(['shipping_id' => $request->get('shippingLine')]);
+
+        $request->session()->flash('updateStatus', 1);
+
+        return redirect()->route('vessels');
     }
 
     /**

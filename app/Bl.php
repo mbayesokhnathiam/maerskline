@@ -16,6 +16,7 @@ class Bl extends Model
         'port_id',
         'vesselle_id',
         'arrival_date',
+        'registration_date',
         'cargo_type',
         'shipper',
         'order',

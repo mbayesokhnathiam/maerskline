@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\PortCodes;
 use App\Bl;
 use App\Loading;
 use App\Shipping;
 use App\Vesselle;
-use DB;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -30,9 +29,15 @@ class HomeController extends Controller
     public function index()
     {
         $totalShips = Shipping::count();
-        $totalVessels = Vesselle::count();
+
+        $totalVessels = Vesselle::where('shipping_id', 1)
+                                ->count();
         $totalBls = Bl::count();
-        $totalNoPorts = DB::select("SELECT COUNT(*) as total FROM port_codes WHERE id NOT IN (SELECT port_id FROM loadings)")[0]->total;
+
+        $totalNoPorts = PortCodes::select('id')
+                        ->whereNotIn('id', Loading::select('port_id'))
+                        ->orderBy('port_code', 'asc')
+                        ->count();
         $user = Auth::user();
 
         return view('home', [

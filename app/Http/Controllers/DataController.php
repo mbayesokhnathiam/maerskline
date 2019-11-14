@@ -50,6 +50,9 @@ class DataController extends Controller
 
                     $found = empty(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
 
+                    $twenty_feets_code = $this->get20sContainers($bls['conteneurs']);
+                    $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
+
                     if($found) {
                         $fourty_feets_number = $this->get40s($bls['conteneurs']);
 
@@ -57,17 +60,12 @@ class DataController extends Controller
 
                         if ($fourty_feets_number != 0 ||  $twenty_feets_number != 0) {
 
-                            $twenty_feets_code = $this->get20sContainers($bls['conteneurs']);
-
-                            $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
 
                             $pod_country = strtoupper($bls['pays_dest']) === 'SN' ? 'SENEGAL' : 'MALI';
 
-
-
                             $bltype = $this->getBlType($bls['conteneurs'][0]);
 
-                            $registration_date = Carbon::now(); // Replace with registration date
+                            $registration_date = Carbon::parse($bls['bateau']['manifDateEnregManif']); // Replace with registration date
 
                             if(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0])) {
                                 PortCodes::create([
@@ -103,7 +101,6 @@ class DataController extends Controller
                             ]);
                         }
                     } else {
-
                         $check_20 = explode('|', Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_20);
                         $check_40 = explode('|', Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_40);
 

@@ -21,6 +21,7 @@ class BlsExport implements FromCollection, WithHeadings
             'IMP/EXP',
             'VESSEL NAME',
             'SHIPPING LINE',
+            'REGISTRATION DATE',
             'POR PLACE', // City
             'POR COUNTRY',
             'POR CLUSTER',
@@ -58,15 +59,16 @@ class BlsExport implements FromCollection, WithHeadings
                     ->rightjoin('shippings', 'vesselles.shipping_id', '=', 'shippings.id')
                     ->select(
                         'bls.imp_exp', 'vesselles.name as v_name',
-                        'shippings.name as s_name', 'port_codes.port_city',
-                        'loadings.country', 'loadings.cluster',
-                        'loadings.route', 'bls.pod_place',
-                        'bls.pod_country', DB::raw('MONTH(bls.arrival_date)'),
-                        DB::raw('YEAR(bls.arrival_date)'), 'bls.cargo_type',
-                        'bls.shipper', 'bls.order',
-                        'bls.commodity', 'number_of_20',
-                        'number_of_40', 'bl_number',
-                        'container_20', 'container_40',
+                        'shippings.name as s_name', 'registration_date',
+                        'port_codes.port_city', 'loadings.country',
+                        'loadings.cluster', 'loadings.route',
+                        'bls.pod_place', 'bls.pod_country',
+                        DB::raw('MONTH(bls.arrival_date)'), DB::raw('YEAR(bls.arrival_date)'),
+                        'bls.cargo_type', 'bls.shipper',
+                        'bls.order', 'bls.commodity',
+                        'number_of_20', 'number_of_40',
+                        'bl_number', 'container_20',
+                        'container_40',
                         )
 
                     ->get();

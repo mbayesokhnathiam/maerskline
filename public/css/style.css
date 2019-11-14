@@ -12,3 +12,10 @@
 .w-17 {
     width: 17.3% !important;
 }
+
+.d-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}

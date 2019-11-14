@@ -15,10 +15,6 @@
                     <div class="alert-info p-4">Shipping Line Deleted</div>
                 @endif
 
-                @if (Session::has('updateStatus') and Session::get('updateStatus') == 1)
-                    <div class="alert-info p-4">Shipping Line Updated</div>
-                @endif
-
                 <a class="btn btn-sm btn-success shadow-sm rounded-0" data-toggle="modal"
                     data-target="#add-shipping-line" href="#">Ajouter une shipping line</a>
             </div>

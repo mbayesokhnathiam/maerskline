@@ -6,16 +6,21 @@
         <div class="col-10">
             <div class="w-100 d-flex align-items-center justify-content-between">
                 <h1>Ports</h1>
+
+                @if (Session::has('updateStatus') and Session::get('updateStatus') == 1)
+                    <div class="alert-info p-4">Port Code Updated</div>
+                @endif
+
                 <form action="/search" method="POST" role="search">
+                    @csrf
                     <div class="input-group">
-                        @csrf
-                        <input type="text" class="form-control shadow-sm" name="q"
-                            placeholder="Search Port Code ...">
-                        <span class="input-group-btn">
+                        <span class="input-group-btn position-absolute" style="z-index: 1;">
                             <button type="submit" class="btn btn-default">
                                 <span class="fas fa-search"></span>
                             </button>
                         </span>
+                        <input type="text" class="form-control shadow-sm pl-5" name="q"
+                            placeholder="Search Port Code ...">
                     </div>
                 </form>
                 {{-- <a class="btn btn-sm btn-success shadow-sm rounded-0" href="#">Ajouter une shipping line</a> --}}
@@ -35,9 +40,10 @@
                                 <td>{{ $port->port_code }}</td>
                                 <td>{{ $port->port_city }}</td>
                                 <td>
-                                    <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white rounded-0" href="#" data-toggle="modal" data-target="#exampleModalCenter">Mettre a jour</a>
+                                    <a class="btn btn-sm bg-maersk-primary font-weight-bold text-white rounded-0" href="/ports/update-loadings-port/{{ $port->id }}">
+                                        Mettre a jour
+                                    </a>
                                 </td>
-                                {{--   href="{{ url('/port/update/' . $port->id) }}"  --}}
                             </tr>
                         @endforeach
                     </tbody>
@@ -50,7 +56,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+{{--  <div class="modal fade" id="updatePort" tabindex="-1" role="dialog" aria-labelledby="updatePortTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content rounded-0">
         <div class="modal-header">
@@ -80,5 +86,5 @@
         </div>
         </div>
     </div>
-</div>
+</div>  --}}
 @endsection
