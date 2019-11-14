@@ -13,7 +13,7 @@
 
                 <form action="/search" method="POST" role="search">
                     @csrf
-                    <div class="input-group">
+                    <div class="d-none input-group">
                         <span class="input-group-btn position-absolute" style="z-index: 1;">
                             <button type="submit" class="btn btn-default">
                                 <span class="fas fa-search"></span>
