@@ -45,7 +45,7 @@ class DataController extends Controller
             if (strtoupper($bls['pays_dest']) === 'SN' || strtoupper($bls['pays_dest']) === 'ML') {
 
                 // Check if the bl has containers
-                if(count($bls['conteneurs']) != 0) {
+                if (count($bls['conteneurs']) != 0) {
                     $blCode = $this->isAplha($this->getContainerLastChar($bls['num_bl'])) ? $this->getContainerWithoutLastChar($bls['num_bl']) : $bls['num_bl'];
 
                     $found = empty(Bl::where('bl_number', $blCode)->select('bl_number')->get()[0]);
@@ -53,7 +53,7 @@ class DataController extends Controller
                     $twenty_feets_code = $this->get20sContainers($bls['conteneurs']);
                     $fourty_feets_code = $this->get40sContainers($bls['conteneurs']);
 
-                    if($found) {
+                    if ($found) {
                         $fourty_feets_number = $this->get40s($bls['conteneurs']);
 
                         $twenty_feets_number = $this->get20s($bls['conteneurs']);
@@ -65,16 +65,18 @@ class DataController extends Controller
 
                             $bltype = $this->getBlType($bls['conteneurs'][0]);
 
-                            $registration_date = Carbon::parse($bls['bateau']['manifDateEnregManif']); // Replace with registration date
+                            $reg_date = date('Y/m/d', strtotime(isset($bls['bateau']['manifDateEnregManif']) ? $bls['bateau']['manifDateEnregManif'] : '2001/01/01'));
 
-                            if(empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0])) {
+                            $registration_date = Carbon::parse($reg_date); // Replace with registration date
+
+                            if (empty(PortCodes::where('port_code', trim($bls['lieu_embarq']))->select('id')->get()[0])) {
                                 PortCodes::create([
                                     'port_code' => trim($bls['lieu_embarq']),
                                     'port_city' => 'DEFAULT'
                                 ]);
                             }
 
-                            if(empty(Vesselle::where('name', trim($bls['bateau']['manifMoyenTransport']))->get()[0])) {
+                            if (empty(Vesselle::where('name', trim($bls['bateau']['manifMoyenTransport']))->get()[0])) {
                                 Vesselle::create([
                                     'name' => trim($bls['bateau']['manifMoyenTransport']),
                                     'shipping_id' => 1
@@ -101,7 +103,7 @@ class DataController extends Controller
                             ]);
                         }
                     } else {
-                        $check_20 = explode('|', Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_20);
+                        $check_20 = explode('|', Bl::where('bl_number', $blCode)->select('container_20')->get()[0]->container_20);
                         $check_40 = explode('|', Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_40);
 
                         $actual_20 = explode('|', $twenty_feets_code);
@@ -110,16 +112,12 @@ class DataController extends Controller
                         $diff_20 = array_diff($actual_20, $check_20);
                         $diff_40 = array_diff($actual_40, $check_40);
 
-                        if (empty($diff_20) && empty($diff_40)) {
-
-
-                        } else {
+                        if (empty($diff_20) && empty($diff_40)) { } else {
                             $count_20 = 0;
                             $count_40 = 0;
 
                             if (!empty($diff_20)) {
                                 $count_20 = count($diff_20);
-
                             }
 
                             if (!empty($diff_40)) {
@@ -129,14 +127,12 @@ class DataController extends Controller
                             Bl::where('bl_number', $blCode)->update([
                                 'number_of_20' => Bl::where('bl_number', $blCode)->select('number_of_20')->get()[0]->number_of_20 + $count_20,
                                 'number_of_40' => Bl::where('bl_number', $blCode)->select('number_of_40')->get()[0]->number_of_40 + $count_40,
-                                'container_20' => Bl::where('bl_number', $blCode)->select('container_20')->get()[0]->container_20 . implode('|', $diff_20),
-                                'container_40' => Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_40 . implode('|', $diff_40),
+                                'container_20' => Bl::where('bl_number', $blCode)->select('container_20')->get()[0]->container_20 . implode('|', $diff_20) . '|',
+                                'container_40' => Bl::where('bl_number', $blCode)->select('container_40')->get()[0]->container_40 . implode('|', $diff_40) . '|',
                             ]);
                         }
                     }
-
                 }
-
             }
         }
 
@@ -151,7 +147,7 @@ class DataController extends Controller
      */
     public function getBlType($firstContainer)
     {
-        return strtolower(substr($firstContainer[3], 0, 2)) === 're' ? 'REEFER' : 'DRY'  ;
+        return strtolower(substr($firstContainer[3], 0, 2)) === 're' ? 'REEFER' : 'DRY';
     }
 
     /**
@@ -245,7 +241,6 @@ class DataController extends Controller
     /** */
     public function getContainerWithoutLastChar($container)
     {
-        return substr($container, 0, strlen($container) -1);
+        return substr($container, 0, strlen($container) - 1);
     }
-
 }
